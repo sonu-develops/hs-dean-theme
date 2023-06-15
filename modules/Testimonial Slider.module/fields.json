@@ -1,0 +1,168 @@
+[ {
+  "id" : "1de9c83e-b293-179f-982a-5900db460f4e",
+  "name" : "edit_left_content",
+  "display_width" : null,
+  "label" : "Edit Left Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Loved by real people</h2>"
+}, {
+  "id" : "71a131b4-5762-63b4-c975-8ced0bb8819b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "528f9204-eb9f-1c11-655e-fff8b3472221",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "09154e61-ac6a-df6c-9ab6-b6274d46c85d",
+  "name" : "edit_testimonial_listing",
+  "display_width" : null,
+  "label" : "Edit Testimonial Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "5b8c84bc-db0d-3677-0142-f8e493158aef",
+    "name" : "add_profile_image",
+    "display_width" : null,
+    "label" : "Add Profile Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/1635275532863%20AlixanderGazzard-Weldon%20thinkific.jpg",
+      "alt" : "1635275532863 AlixanderGazzard-Weldon thinkific",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    }
+  }, {
+    "id" : "42d2257a-78b2-766a-2c9a-1ab18165f968",
+    "name" : "edit_profile_details",
+    "display_width" : null,
+    "label" : "Edit Profile Details",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<div><strong>Jorge M</strong></div>\n<div>Product Marketer</div>"
+  }, {
+    "id" : "262069ef-35dd-e460-5df6-fccd498bac3f",
+    "name" : "edit_feedback_content",
+    "display_width" : null,
+    "label" : "Edit FeedBack Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>“Since using Mountains Theme, our team's morale has improved dramatically. Kudos is helping reinforce our culture of celebrating wins and recognition!”</h4>"
+  }, {
+    "id" : "4fcb718c-675e-8a15-6772-c5e69a547643",
+    "name" : "edit_listing_bg_color",
+    "display_width" : null,
+    "label" : "Edit Listing BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#e9e9f6",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "add_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/1635275532863%20AlixanderGazzard-Weldon%20thinkific.jpg",
+      "alt" : "1635275532863 AlixanderGazzard-Weldon thinkific",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "edit_profile_details" : "<div><strong>Jorge M</strong></div>\n<div>Product Marketer</div>",
+    "edit_feedback_content" : "<h4>“Since using Mountains Theme, our team's morale has improved dramatically. Kudos is helping reinforce our culture of celebrating wins and recognition!”</h4>",
+    "edit_listing_bg_color" : {
+      "color" : "#e9e9f6",
+      "opacity" : 100
+    }
+  }, {
+    "add_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/1635275532863%20AlixanderGazzard-Weldon%20thinkific.jpg",
+      "alt" : "1635275532863 AlixanderGazzard-Weldon thinkific",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "edit_profile_details" : "<div><strong>Jorge M</strong></div>\n<div>Product Marketer</div>",
+    "edit_feedback_content" : "<h4>“Since using Mountains Theme, our team's morale has improved dramatically. Kudos is helping reinforce our culture of celebrating wins and recognition!”</h4>",
+    "edit_listing_bg_color" : {
+      "color" : "#e9e9f6",
+      "opacity" : 100
+    }
+  }, {
+    "add_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/1635275532863%20AlixanderGazzard-Weldon%20thinkific.jpg",
+      "alt" : "1635275532863 AlixanderGazzard-Weldon thinkific",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "edit_profile_details" : "<div><strong>Jorge M</strong></div>\n<div>Product Marketer</div>",
+    "edit_feedback_content" : "<h4>“Since using Mountains Theme, our team's morale has improved dramatically. Kudos is helping reinforce our culture of celebrating wins and recognition!”</h4>",
+    "edit_listing_bg_color" : {
+      "color" : "#e9e9f6",
+      "opacity" : 100
+    }
+  }, {
+    "add_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/1635275532863%20AlixanderGazzard-Weldon%20thinkific.jpg",
+      "alt" : "1635275532863 AlixanderGazzard-Weldon thinkific",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "edit_profile_details" : "<div><strong>Jorge M</strong></div>\n<div>Product Marketer</div>",
+    "edit_feedback_content" : "<h4>“Since using Mountains Theme, our team's morale has improved dramatically. Kudos is helping reinforce our culture of celebrating wins and recognition!”</h4>",
+    "edit_listing_bg_color" : {
+      "color" : "#e9e9f6",
+      "opacity" : 100
+    }
+  } ]
+} ]

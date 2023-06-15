@@ -1,0 +1,16 @@
+.team-style {
+    margin: 10px;
+}
+.team-mod-content {
+    background-color: #eef0f7;
+    margin-top: -7px;
+    padding: 25px 20px;
+}
+.team-mod-content h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.team-mod-content p {
+    margin: 0 !important;
+}

@@ -1,0 +1,52 @@
+[ {
+  "id" : "0c50baa5-b2e4-c5db-4d10-828375d5f03a",
+  "name" : "edit_author_image",
+  "display_width" : null,
+  "label" : "Edit Author Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Ellipse%202.png",
+    "alt" : "Ellipse 2",
+    "loading" : "lazy",
+    "width" : 50,
+    "height" : 50,
+    "max_width" : 50,
+    "max_height" : 50
+  }
+}, {
+  "id" : "97edad9c-04e7-ee06-7755-0dbd1ffddc72",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "543f9613-7937-8f4b-7889-8d13cba72ca6",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "93df9f34-a2f7-edc9-7b67-27e59c73900d",
+  "name" : "edit_profile_content",
+  "display_width" : null,
+  "label" : "Edit Profile Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h5><strong><span style=\"color: #ffffff;\">Tom Ford</span></strong></h5>\n<p><span style=\"color: #ffffff;\">@tomforddeveloper</span></p>"
+} ]

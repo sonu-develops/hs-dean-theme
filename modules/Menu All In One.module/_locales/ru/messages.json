@@ -1,0 +1,177 @@
+{
+  "display_mode.choices.hybrid" : {
+    "message" : "Гибридный",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_mode.choices.localized" : {
+    "message" : "Локализованный",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_mode.choices.pagelang" : {
+    "message" : "PageLang",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_mode.help_text" : {
+    "message" : "Язык текста в переключателе языков. Режим «PageLang» означает, что названия языков будут отображаться на языке страницы, на которой находится переключатель. Режим «Локализованный» означает, что название каждого языка будет отображаться на данном языке. Режим «Гибридный» — это комбинация двух приведенных выше режимов.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_mode.label" : {
+    "message" : "Режим отображения",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_mode.placeholder" : {
+    "message" : "Поиск",
+    "description" : "",
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.label" : {
+    "message" : "Choice",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.choose_button_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_link.label" : {
+    "message" : "Edit Button Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_text.default" : {
+    "message" : "Contact",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_text.label" : {
+    "message" : "Edit Button Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.edit_button_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.name" : {
+    "message" : "Language Switcher Module",
+    "description" : null,
+    "placeholders" : null
+  },
+  "edit_button_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Menu All In One",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simplemenu_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simplemenu_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simplemenu_field.label" : {
+    "message" : "Simple menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simplemenu_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

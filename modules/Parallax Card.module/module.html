@@ -1,0 +1,47 @@
+<div class="paral"> 
+	<div class="paral-main d-flex">
+		<div class="paral-item col-6">
+			<div class="paral-sticky">
+				{{ module.edit_module_heading }}
+			</div>
+		</div>
+		<div class="paral-item col-6">
+			<div class="team-quotes hide-scrollbar">
+				<div class="team-quotes-collection">
+					<div class="collection-list">
+						{% for item in module.edit_card_listing %}
+							<!-- listing start -->
+							<div class="collection-item">
+								<div class="collection-style">
+									<blockquote class="block-quote">
+										{{ item.edit_card_content }}
+										
+									</blockquote>
+									<div class="person-style d-flex">
+										<div class="persone-image">
+											
+											{% if item.edit_profile_image.src %}
+												{% set sizeAttrs = 'width="{{ item.edit_profile_image.width }}" height="{{ item.edit_profile_image.height }}"' %}
+												{% if item.edit_profile_image.size_type == 'auto' %}
+													{% set sizeAttrs = 'width="{{ item.edit_profile_image.width }}" height="{{ item.edit_profile_image.height }}" style="max-width: 100%; height: auto;"' %}
+													{% elif item.edit_profile_image.size_type == 'auto_custom_max' %}
+													{% set sizeAttrs = 'width="{{ item.edit_profile_image.max_width }}" height="{{ item.edit_profile_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+												{% endif %}
+												{% set loadingAttr = item.edit_profile_image.loading != 'disabled' ? 'loading="{{ item.edit_profile_image.loading }}"' : '' %}
+												<img src="{{ item.edit_profile_image.src }}" alt="{{ item.edit_profile_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+											{% endif %}
+										</div>
+										<div class="persone-details">
+											{{ item.edit_profile_details }}
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end -->
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

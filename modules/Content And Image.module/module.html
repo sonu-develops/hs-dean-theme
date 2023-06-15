@@ -1,0 +1,51 @@
+<div class="mt-two-col">
+	<div class="{{ module.choose_image_and_content_direction }} d-flex">
+		<div class="mt-two-left col-6">
+			<div class="mt-content"> 
+				<div class="content-section-mt">
+					{{ module.module_content_section.edit_content_and_image_section.edit_content_section }}
+				</div>
+				<div class="mt-button {{ module.module_content_section.edit_content_and_image_section.edit_button_group.choose_button_color_style }}">
+					{% set href = module.module_content_section.edit_content_and_image_section.edit_button_group.edit_button_link.url.href %}
+					{% if module.module_content_section.edit_content_and_image_section.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a class="" href="{{ href }}"
+						{% if module.module_content_section.edit_content_and_image_section.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.module_content_section.edit_content_and_image_section.edit_button_group.edit_button_link.rel %}rel="{{ module.module_content_section.edit_content_and_image_section.edit_button_group.edit_button_link.rel }}"{% endif %}
+						>
+						{{ module.module_content_section.edit_content_and_image_section.edit_button_group.edit_button_content }}
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mt-two-right col-6">
+			<div class="mt-image">
+				
+				{% if module.module_content_section.edit_image_.src %}
+					{% set sizeAttrs = 'width="{{ module.module_content_section.edit_image_.width }}" height="{{ module.module_content_section.edit_image_.height }}"' %}
+					{% if module.module_content_section.edit_image_.size_type == 'auto' %}
+						{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif module.module_content_section.edit_image_.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ module.module_content_section.edit_image_.max_width }}" height="{{ module.module_content_section.edit_image_.max_height }}" style="max-width: 100%; height: auto;"' %}
+					{% endif %}
+					{% set loadingAttr = module.module_content_section.edit_image_.loading != 'disabled' ? 'loading="{{ module.module_content_section.edit_image_.loading }}"' : '' %}
+					<img src="{{ module.module_content_section.edit_image_.src }}" alt="{{ module.module_content_section.edit_image_.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% require_css %}
+<style>
+{% scope_css %}
+
+.mt-two-col
+  {
+  {{ module.style.module_spacing.css }}
+  }
+  
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

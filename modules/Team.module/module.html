@@ -1,0 +1,23 @@
+<div class="team-mod d-flex">
+	{% for item in module.edit_team_module %}
+		<div class="team-mod-item col-3">
+			<div class="team-style">
+				<div class="team-image">
+					{% if item.edit_team_member_image.src %}
+						{% set sizeAttrs = 'width="{{ item.edit_team_member_image.width }}" height="{{ item.edit_team_member_image.height }}"' %}
+						{% if item.edit_team_member_image.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ item.edit_team_member_image.width }}" height="{{ item.edit_team_member_image.height }}" style="max-width: 100%; height: auto;"' %}
+							{% elif item.edit_team_member_image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.edit_team_member_image.max_width }}" height="{{ item.edit_team_member_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.edit_team_member_image.loading != 'disabled' ? 'loading="{{ item.edit_team_member_image.loading }}"' : '' %}
+						<img src="{{ item.edit_team_member_image.src }}" alt="{{ item.edit_team_member_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</div>
+				<div class="team-mod-content">
+					{{ item.edit_profile_content }}
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>

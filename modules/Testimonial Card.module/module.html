@@ -1,0 +1,60 @@
+<div class="testimonial-card">
+  <div class="container">   
+    <div class="test-heading">
+      {{ module.edit_section_heading }}
+    </div>
+    <div class="test-main">
+      {% for item in module.edit_profile_listing %}
+      <div class="test-item">
+           <div class="test-item-inner">
+        <div class="feed-back-content">
+          {{ item.edit_feedback_content }}
+        </div>
+        <div class="profile-main d-flex">
+          <div class="profil-img">
+             {% if item.edit_profile_group.edit_profile_image.src %}
+    {% set sizeAttrs = 'width="{{ item.edit_profile_group.edit_profile_image.width }}" height="{{ item.edit_profile_group.edit_profile_image.height }}"' %}
+    {% if item.edit_profile_group.edit_profile_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif item.edit_profile_group.edit_profile_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.edit_profile_group.edit_profile_image.max_width }}" height="{{ item.edit_profile_group.edit_profile_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+     {% set loadingAttr = item.edit_profile_group.edit_profile_image.loading != 'disabled' ? 'loading="{{ item.edit_profile_group.edit_profile_image.loading }}"' : '' %}
+    <img src="{{ item.edit_profile_group.edit_profile_image.src }}" alt="{{ item.edit_profile_group.edit_profile_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  {% endif %}
+          </div>
+          <div class="profile-content">
+            {{ item.edit_profile_group.edit_profile_details }}
+          </div>
+        </div>
+        </div>
+      </div>
+{% endfor %}
+    </div>
+  </div>
+</div>
+ 
+
+	{% require_css %}
+	<style>
+	{% scope_css %}
+
+	.testimonial-card
+	  {
+	  {{ module.style.module_spacing.css }}
+	  }
+    .test-item-inner {
+    display: inline-block;
+    width: 100%;
+    padding: 24px;
+    border-radius: 20px;
+    background-color:  {{ module.style.color_field.color }};
+    margin-bottom: 20px;
+}
+    
+
+	  
+	  {% end_scope_css %}
+	</style>
+	{% end_require_css %}
+ 

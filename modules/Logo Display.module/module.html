@@ -1,0 +1,36 @@
+<div class="logo-displat-mt">
+	<div class="logo-mt-heading">
+		{{ module.edit_heading_content }}
+	</div>
+	<div class="logo-main-mt">
+		{% for item in module.edit_logo_listing_group %}
+			<div class="logo-item-mt">
+				{% if item.add_logo.src %}
+					{% set sizeAttrs = 'width="{{ item.add_logo.width }}" height="{{ item.add_logo.height }}"' %}
+					{% if item.add_logo.size_type == 'auto' %}
+						{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+						{% elif item.add_logo.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ item.add_logo.max_width }}" height="{{ item.add_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+					{% endif %}
+					{% set loadingAttr = item.add_logo.loading != 'disabled' ? 'loading="{{ item.add_logo.loading }}"' : '' %}
+					<img src="{{ item.add_logo.src }}" alt="{{ item.add_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+
+
+	{% require_css %}
+	<style>
+	{% scope_css %}
+
+	.logo-displat-mt
+	  {
+	 {{ module.style.module_spacing.css }}
+	  }
+	  
+	  {% end_scope_css %}
+	</style>
+	{% end_require_css %}

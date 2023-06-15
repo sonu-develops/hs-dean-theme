@@ -1,0 +1,132 @@
+[ {
+  "id" : "83b6614d-a91c-9b07-7e88-4d45eb31600f",
+  "name" : "edit_module_heading",
+  "display_width" : null,
+  "label" : "Edit Module Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Hear what happy teams are saying about Matter</h2>"
+}, {
+  "id" : "ef5d2ee3-a8ef-9d89-a81c-780a27cb8860",
+  "name" : "edit_card_listing",
+  "display_width" : null,
+  "label" : "Edit Card Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "a82f455f-1377-4074-979c-98383b108e81",
+    "name" : "edit_card_content",
+    "display_width" : null,
+    "label" : "Edit Card Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "“The setup was extremely easy. It had good UX and interface – people knew how to intuitively use it. The channel got popular in the first two weeks.\""
+  }, {
+    "id" : "3792ad7b-b146-7629-9cf7-f9188a572b8a",
+    "name" : "edit_profile_image",
+    "display_width" : null,
+    "label" : "Edit Profile Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/6307d9e847998b27fc8c1f6d_Mathis%20Bogen%20-%20Headshot.jpeg",
+      "alt" : "6307d9e847998b27fc8c1f6d_Mathis Bogen - Headshot",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    }
+  }, {
+    "id" : "f5cbe899-5856-2cab-a385-099049a219be",
+    "name" : "edit_profile_details",
+    "display_width" : null,
+    "label" : "Edit Profile Details",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Mathis Bogen</h3>\n<p>Head of Internal Communications</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_card_content" : "“The setup was extremely easy. It had good UX and interface – people knew how to intuitively use it. The channel got popular in the first two weeks.\"",
+    "edit_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/6307d9e847998b27fc8c1f6d_Mathis%20Bogen%20-%20Headshot.jpeg",
+      "alt" : "6307d9e847998b27fc8c1f6d_Mathis Bogen - Headshot",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "edit_profile_details" : "<h3>Mathis Bogen</h3>\n<p>Head of Internal Communications</p>"
+  }, {
+    "edit_card_content" : "“The setup was extremely easy. It had good UX and interface – people knew how to intuitively use it. The channel got popular in the first two weeks.\"",
+    "edit_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/6307d9e847998b27fc8c1f6d_Mathis%20Bogen%20-%20Headshot.jpeg",
+      "alt" : "6307d9e847998b27fc8c1f6d_Mathis Bogen - Headshot",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "edit_profile_details" : "<h3>Mathis Bogen</h3>\n<p>Head of Internal Communications</p>"
+  }, {
+    "edit_card_content" : "“The setup was extremely easy. It had good UX and interface – people knew how to intuitively use it. The channel got popular in the first two weeks.\"",
+    "edit_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/6307d9e847998b27fc8c1f6d_Mathis%20Bogen%20-%20Headshot.jpeg",
+      "alt" : "6307d9e847998b27fc8c1f6d_Mathis Bogen - Headshot",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "edit_profile_details" : "<h3>Mathis Bogen</h3>\n<p>Head of Internal Communications</p>"
+  }, {
+    "edit_card_content" : "“The setup was extremely easy. It had good UX and interface – people knew how to intuitively use it. The channel got popular in the first two weeks.\"",
+    "edit_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/6307d9e847998b27fc8c1f6d_Mathis%20Bogen%20-%20Headshot.jpeg",
+      "alt" : "6307d9e847998b27fc8c1f6d_Mathis Bogen - Headshot",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "edit_profile_details" : "<h3>Mathis Bogen</h3>\n<p>Head of Internal Communications</p>"
+  }, {
+    "edit_card_content" : "“The setup was extremely easy. It had good UX and interface – people knew how to intuitively use it. The channel got popular in the first two weeks.\"",
+    "edit_profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/6307d9e847998b27fc8c1f6d_Mathis%20Bogen%20-%20Headshot.jpeg",
+      "alt" : "6307d9e847998b27fc8c1f6d_Mathis Bogen - Headshot",
+      "loading" : "lazy",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "edit_profile_details" : "<h3>Mathis Bogen</h3>\n<p>Head of Internal Communications</p>"
+  } ]
+} ]

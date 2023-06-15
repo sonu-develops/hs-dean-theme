@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Group%202.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 99817075282,
+  "label" : "Ebook Author",
+  "is_available_for_new_content" : true
+}

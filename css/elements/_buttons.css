@@ -1,0 +1,129 @@
+button,
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.15s linear;
+  white-space: normal;
+}
+
+button:disabled,
+.button:disabled {
+  background-color: #D0D0D0;
+  border-color: #D0D0D0;
+  color: #E6E6E6;
+}
+
+/* No button */
+
+.no-button,
+.no-button:hover,
+.no-button:focus,
+.no-button:active {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: initial;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  transition: none;
+}
+
+{###########################################################################}
+{############################   4. Buttons   ###############################}
+{###########################################################################}
+
+
+body .button a{
+  
+  background-color:rgba({{ theme.buttons.cta_type.default_cta.default_background_color.color|convert_rgb }}, {{ theme.buttons.cta_type.default_cta.default_background_color.opacity/100 }});
+  border:{{ theme.buttons.cta_type.default_cta.border_width}}px {{ theme.buttons.cta_type.default_cta.border_type }} {{ theme.buttons.cta_type.default_cta.border_color.color }};
+  color:rgba({{ theme.buttons.cta_type.default_cta.default_text_color.color|convert_rgb }}, {{ theme.buttons.cta_type.default_cta.default_text_color.opacity/100 }});
+  text-transform:{{ theme.buttons.cta_type.default_cta.default_transform }};
+  padding:{{ theme.buttons.cta_type.default_cta.default_vertical_spacing }}px {{ theme.buttons.cta_type.default_cta.default_horizontal_spacing }}px;
+  border-radius:{{ theme.buttons.cta_type.default_cta.default_border_radius}}px;
+  display: inline-block;
+}
+
+body .transparent_cta a{
+  background-color:rgba({{ theme.buttons.cta_type.transparent_cta.transparent_background_color.color|convert_rgb }}, {{ theme.buttons.cta_type.transparent_cta.transparent_background_color.opacity/100 }});
+  border:{{ theme.buttons.cta_type.transparent_cta.border_width}}px {{ theme.buttons.cta_type.transparent_cta.border_type }} {{ theme.buttons.cta_type.transparent_cta.border_color.color }};
+  color:rgba({{ theme.buttons.cta_type.transparent_cta.transparent_text_color.color|convert_rgb }}, {{ theme.buttons.cta_type.transparent_cta.transparent_text_color.opacity/100 }});
+  text-transform:{{ theme.buttons.cta_type.transparent_cta.transparent_transform }};
+  padding:{{ theme.buttons.cta_type.transparent_cta.transparent_vertical_spacing }}px {{ theme.buttons.cta_type.transparent_cta.transparent_horizontal_spacing }}px;
+   border-radius:{{ theme.buttons.cta_type.transparent_cta.transparent_border_radius}}px;
+display: inline-block;
+}
+body .white_cta a{
+  background-color:rgba({{ theme.buttons.cta_type.white_cta.white_background_color.color|convert_rgb }}, {{ theme.buttons.cta_type.white_cta.white_background_color.opacity/100 }});
+  border:{{ theme.buttons.cta_type.white_cta.white_border.top.width.value ~ 'px' }} {{ theme.buttons.cta_type.white_cta.white_border.top.style }} rgba({{ theme.buttons.cta_type.white_cta.white_border.top.color|convert_rgb }}, {{ theme.buttons.cta_type.white_cta.white_border.top.opacity/100 }});
+  color:rgba({{ theme.buttons.cta_type.white_cta.white_text_color.color|convert_rgb }}, {{ theme.buttons.cta_type.white_cta.white_text_color.opacity/100 }});
+  text-transform:{{ theme.buttons.cta_type.white_cta.white_transform }};
+  padding:{{ theme.buttons.cta_type.white_cta.white_vertical_spacing }}px {{ theme.buttons.cta_type.white_cta.white_horizontal_spacing }}px;
+   border-radius:{{ theme.buttons.cta_type.white_cta.white_border_radius}}px;
+display: inline-block;
+}
+
+body .simple_cta a{
+  color:rgba({{ theme.buttons.cta_type.simple_cta.simple_text_color.color|convert_rgb }}, {{ theme.buttons.cta_type.simple_cta.simple_text_color.opacity/100 }});
+  text-transform:{{ theme.buttons.cta_type.simple_cta.simple_transform }};
+  padding:{{ theme.buttons.cta_type.simple_cta.simple_vertical_spacing }}px {{ theme.buttons.cta_type.simple_cta.simple_horizontal_spacing }}px;
+display: inline-block;  
+}
+
+body .arrow_cta a{
+  background-color:rgba({{ theme.buttons.cta_type.arrow_cta.arrow_background_color.color|convert_rgb }}, {{ theme.buttons.cta_type.arrow_cta.arrow_background_color.opacity/100 }});
+  border:{{ theme.buttons.cta_type.arrow_cta.border_width}}px {{ theme.buttons.cta_type.arrow_cta.border_type }} {{ theme.buttons.cta_type.arrow_cta.border_color.color }};
+  color:rgba({{ theme.buttons.cta_type.arrow_cta.arrow_text_color.color|convert_rgb }}, {{ theme.buttons.cta_type.arrow_cta.arrow_text_color.opacity/100 }});
+  text-transform:{{ theme.buttons.cta_type.arrow_cta.arrow_transform }};
+  padding:{{ theme.buttons.cta_type.arrow_cta.arrow_vertical_spacing }}px {{ theme.buttons.cta_type.arrow_cta.arrow_horizontal_spacing }}px;
+   border-radius:{{ theme.buttons.cta_type.arrow_cta.arrow_border_radius}}px;
+display: inline-block;
+  position:relative;
+}
+
+body .simple_cta_with_arrow a{
+  color:rgba({{ theme.buttons.cta_type.simple_cta_with_arrow.simple_cta_with_arrow_text_color.color|convert_rgb }}, {{ theme.buttons.cta_type.simple_cta_with_arrow.simple_cta_with_arrow_text_color.opacity/100 }});
+  text-transform:{{ theme.buttons.cta_type.simple_cta_with_arrow.simple_cta_with_arrow_transform }};
+  padding:{{ theme.buttons.cta_type.simple_cta_with_arrow.simple_cta_with_arrow_vertical_spacing }}px {{ theme.buttons.cta_type.simple_cta_with_arrow.simple_cta_with_arrow_horizontal_spacing }}px {{ theme.buttons.cta_type.simple_cta_with_arrow.simple_cta_with_arrow_vertical_spacing }}px 0px;
+display: inline-block;  
+  position:relative; 
+}
+
+
+body .button a:hover {
+  background-color:rgba({{ theme.buttons.cta_type.default_cta.background_color_hover.color|convert_rgb }}, {{ theme.buttons.cta_type.default_cta.background_color_hover.opacity/100 }});
+color: {{ theme.buttons.cta_type.default_cta.text_hover.color }};
+}
+
+body .transparent_cta a:hover{
+   color:{{ theme.buttons.cta_type.transparent_cta.text_hover.color }};
+  background-color:rgba({{ theme.buttons.cta_type.transparent_cta.background_color_hover.color|convert_rgb }}, {{ theme.buttons.cta_type.transparent_cta.background_color_hover.opacity/100 }});
+}
+
+body .white_cta a:hover{
+  color:{{ theme.buttons.cta_type.white_cta.text_hover.color }};
+  background-color:rgba({{ theme.buttons.cta_type.white_cta.background_color_hover.color|convert_rgb }}, {{ theme.buttons.cta_type.white_cta.background_color_hover.opacity/100 }});
+}
+
+body .simple_cta a:hover{
+  color:{{ theme.buttons.cta_type.simple_cta.text_hover.color }};
+}
+
+
+body .arrow_cta a:hover{
+   background-color:rgba({{ theme.buttons.cta_type.arrow_cta.background_color_hover.color|convert_rgb }}, {{ theme.buttons.cta_type.arrow_cta.background_color_hover.opacity/100 }});
+color: {{ theme.buttons.cta_type.arrow_cta.text_hover.color }};
+}
+
+body .simple_cta_with_arrow a:hover{
+  color:{{ theme.buttons.cta_type.simple_cta_with_arrow.text_hover.color }};
+}

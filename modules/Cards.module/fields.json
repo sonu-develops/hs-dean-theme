@@ -1,0 +1,106 @@
+[ {
+  "id" : "5b5ade6c-3291-ae86-5925-db4a1572e5e4",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "61d62c0e-0c22-d391-9962-65650b5442dc",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "7a8568e2-3330-eb4c-866b-6dbc801e772e",
+  "name" : "edit_card_listing",
+  "display_width" : null,
+  "label" : "Edit Card Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "ab28ba5f-19cc-78f4-df47-672e8aa57677",
+    "name" : "add_image",
+    "display_width" : null,
+    "label" : "Add Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/chat.png",
+      "alt" : "chat",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    }
+  }, {
+    "id" : "ad0ed9ef-65fb-f734-8138-cffde36b85dd",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<div style=\"text-align: center;\">\n<h3>Start with a demo</h3>\n<p>A personalized walkthrough of Matter. We’ll show you how it works and answer any questions you may have. All done via Zoom.</p>\n</div>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "add_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/chat.png",
+      "alt" : "chat",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "edit_content" : "<div style=\"text-align: center;\">\n<h3>Start with a demo</h3>\n<p>A personalized walkthrough of Matter. We’ll show you how it works and answer any questions you may have. All done via Zoom.</p>\n</div>"
+  }, {
+    "add_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/chat.png",
+      "alt" : "chat",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "edit_content" : "<div style=\"text-align: center;\">\n<h3>Start with a demo</h3>\n<p>A personalized walkthrough of Matter. We’ll show you how it works and answer any questions you may have. All done via Zoom.</p>\n</div>"
+  }, {
+    "add_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/chat.png",
+      "alt" : "chat",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "edit_content" : "<div style=\"text-align: center;\">\n<h3>Start with a demo</h3>\n<p>A personalized walkthrough of Matter. We’ll show you how it works and answer any questions you may have. All done via Zoom.</p>\n</div>"
+  } ]
+} ]

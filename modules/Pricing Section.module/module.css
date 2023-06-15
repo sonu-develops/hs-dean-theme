@@ -1,0 +1,15 @@
+.pri-item-in {
+    padding: 30px; 
+}
+.pricing-sec-price {
+    padding-top: 40px;
+}
+.pricing-sec-main.d-flex {
+    align-items: end;
+}
+.inner-section-rec {
+    padding: 12px 30px;
+}
+.pricing-sec-inner-t {
+    margin: 10px;
+}

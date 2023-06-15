@@ -1,0 +1,56 @@
+<div id="myHeader" class="site-header">
+  <div class="container"> 
+    <div class="header-main d-flex">
+      <div class="sec-left col-6">
+        <div class="add-logo">
+          {% set loadingAttr = module.add_logo.loading != 'disabled' ? '{{ module.add_logo.loading }}' : '' %}
+
+{% logo
+  override_inherited_src="{{ module.add_logo.override_inherited_src }}"
+  src="{{ module.add_logo.src }}"
+  alt="{{ module.add_logo.alt }}"
+  width="{{ module.add_logo.width }}"
+  height="{{ module.add_logo.height }}"
+  loading="{{ loadingAttr }}"
+  suppress_company_name="{{ module.add_logo.suppress_company_name }}"
+%}
+        </div>
+      </div>
+      <div class="sec-right col-6 align-center">
+<!--    edit language switcher      -->
+        <div class="global-lang">
+          {% set path = request.path|truncate(3, true, '') %}
+{% if path is string_containing 'en' %}
+  {% set site_language = 'en'  %} 
+  {% set other_language = 'fi' %}
+{% else %}
+  {% set site_language = 'fi' %}
+  {% set other_language = 'en' %}
+{% endif %}
+{% if content.translated_content %}
+  {% for item in content.translated_content %}
+    {% set other_language_url = "/"~item.slug %} 
+  {% endfor %}
+{% else %}
+  {% set other_language_url = '#' %} 
+{% endif %}
+        </div>
+<!--     end     -->
+        <div class="add-button">
+          {% set href = module.edit_button_group.edit_button_link.url.href %}
+{% if module.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set href = "mailto:" + href %}
+{% endif %}
+<a class="site-button" href="{{ href }}"
+  {% if module.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+  {% if module.edit_button_group.edit_button_link.rel %}rel="{{ module.edit_button_group.edit_button_link.rel }}"{% endif %}
+  >
+  {{ module.edit_button_group.edit_button_text }}
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 

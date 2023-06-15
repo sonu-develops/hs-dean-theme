@@ -1,0 +1,10 @@
+[ {
+  "id" : "a2451e63-02d0-3e7d-0cdf-5f7b6762b2b3",
+  "name" : "edit_banner_content",
+  "display_width" : null,
+  "label" : "Edit Banner Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1 style=\"text-align: center;\">Our Blog</h1>\n<div style=\"text-align: center;\"><strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></div>"
+} ]

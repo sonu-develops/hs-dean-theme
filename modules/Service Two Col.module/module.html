@@ -1,0 +1,30 @@
+<div class="service-mod">
+	{% for item in module.edit_service_module_listing %}
+		<div class="service-item">
+			<div class="service-mod-left">
+				<div class="service-mod-image" style="background-image: url({{ item.edit_module_image.src }});">
+				</div>
+			</div>
+			<div class="service-mod-right">
+				<div class="service-content">
+					<div class="service-content-inner">
+						{{ item.edit_content_section.edit_content }}
+					</div>
+					<div class="service-btn">
+						
+						{% set href = item.edit_content_section.edit_button_group.edit_button_link.url.href %}
+						{% if item.edit_content_section.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						<a href="{{ href }}"
+							{% if item.edit_content_section.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+							{% if item.edit_content_section.edit_button_group.edit_button_link.rel %}rel="{{ item.edit_content_section.edit_button_group.edit_button_link.rel }}"{% endif %}
+							>
+							{{ item.edit_content_section.edit_button_group.edit_button_text }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>

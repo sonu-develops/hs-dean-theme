@@ -1,0 +1,21 @@
+<div class="list-content">
+	<ul>
+		{% for item in module.edit_content_listing %}
+			<li>{{ item.edit_content }}</li>
+		{% endfor %}
+	</ul>
+</div>
+
+
+	{% require_css %}
+	<style>
+	{% scope_css %}
+
+	.list-content
+	  {
+	  {{ module.style.module_spacing.css }}
+	  }
+	  
+	  {% end_scope_css %}
+	</style>
+	{% end_require_css %}

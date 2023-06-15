@@ -1,0 +1,87 @@
+[ {
+  "id" : "b739ecd2-c45b-accf-27fa-b50ac934cb86",
+  "name" : "add_top_heading_text",
+  "display_width" : null,
+  "label" : "Add Top Heading Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Most Popular"
+}, {
+  "id" : "79afcdf7-f3e7-5b18-bf64-6b9cba7668ff",
+  "name" : "choose_between_default_or_custom_blog",
+  "display_width" : null,
+  "label" : "Choose Between Default or Custom Blog",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "default", "Default" ], [ "custom", "Custom" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "default"
+}, {
+  "id" : "b980759b-cc7b-458b-9adc-882552c3a388",
+  "name" : "choose_blog",
+  "display_width" : null,
+  "label" : "Choose Blog",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "79afcdf7-f3e7-5b18-bf64-6b9cba7668ff",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "custom",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "blog",
+  "default" : ""
+}, {
+  "id" : "a9538775-9a3c-321a-363a-7b54b4f4bd33",
+  "name" : "choose_number_of_post",
+  "display_width" : null,
+  "label" : "Choose Number Of Post",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 3
+}, {
+  "id" : "c7f61188-9454-0d31-80cb-a6287b54ea9c",
+  "name" : "do_you_want_to_show_",
+  "display_width" : null,
+  "label" : "Check This To Display Post Summary",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "f094eebb-2ce4-865b-f266-1ba077e0746f",
+  "name" : "do_you_want_to_show_dates",
+  "display_width" : null,
+  "label" : "Check This To Display Post Publish Date",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "b0474944-5b60-dc9e-b9bd-fa103ecd357c",
+  "name" : "add_post_background_color",
+  "display_width" : null,
+  "label" : "Add Post Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#EAF0F6",
+    "opacity" : 100
+  }
+} ]

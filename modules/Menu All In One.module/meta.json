@@ -1,0 +1,17 @@
+{
+  "content_tags" : [ {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type-language_switcher",
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "fontawesome-5.14.0:Bars:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 99817101988,
+  "label" : "Menu All In One",
+  "is_available_for_new_content" : true
+}

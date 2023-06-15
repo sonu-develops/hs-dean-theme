@@ -1,0 +1,38 @@
+<div class="auth-sec">
+	<div class="auth-sec d-flex">
+		<div class="auth-img">
+			<div class="auth-sec-image">
+				
+				{% if module.edit_author_image.src %}
+					{% set sizeAttrs = 'width="{{ module.edit_author_image.width }}" height="{{ module.edit_author_image.height }}"' %}
+					{% if module.edit_author_image.size_type == 'auto' %}
+						{% set sizeAttrs = 'width="{{ module.edit_author_image.width }}" height="{{ module.edit_author_image.height }}" style="max-width: 100%; height: auto;"' %}
+						{% elif module.edit_author_image.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ module.edit_author_image.max_width }}" height="{{ module.edit_author_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+					{% endif %}
+					{% set loadingAttr = module.edit_author_image.loading != 'disabled' ? 'loading="{{ module.edit_author_image.loading }}"' : '' %}
+					<img src="{{ module.edit_author_image.src }}" alt="{{ module.edit_author_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				{% endif %}
+			</div>
+		</div>
+		<div class="auth-sec-content">
+			<div class="auth-inner-content">
+				{{ module.edit_profile_content }}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	{% require_css %}
+	<style>
+	{% scope_css %}
+
+	.auth-sec
+	  {
+	  {{ module.style.module_spacing.css }}
+	  }
+	  
+	  {% end_scope_css %}
+	</style>
+	{% end_require_css %}

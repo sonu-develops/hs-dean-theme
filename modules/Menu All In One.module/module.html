@@ -1,0 +1,79 @@
+<div class="lang-switch-main d-flex">
+  <!-- Navigation is start -->
+  <div class="menu-sec custom-menu-primary">
+   {% simple_menu menu_tree="{{ module.simplemenu_field }}" %}
+  </div>
+  <div class="search-main">
+     <!--    Language Switcher  -->
+    <div class="lang-switch-left">
+      {% language_switcher display_mode='{{ module.display_mode }}' %}
+    </div>
+    <!-- End -->
+    
+    <!--  Search Section start  -->
+    <div class="search_button d-flex">
+      <div class="search-toggle">
+        <div class="search-icon icon-search"><i class="fas fa-search"></i></div>
+      </div>
+      
+      <div class="lang-switch-right mt-web-button">
+        {% set href = module.edit_button_group.edit_button_link.url.href %}
+        {% if module.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+          {% if module.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.edit_button_group.edit_button_link.rel %}rel="{{ module.edit_button_group.edit_button_link.rel }}"{% endif %}
+          >
+          {{ module.edit_button_group.edit_button_text }}
+        </a>
+      </div>
+    </div>
+ 
+  </div>
+  <!--   drop- show start -->
+  <div class="header__search header--element search-container dropdown_menu-6">
+    <div class="header_search_wrapper">
+      <div class="search-toggle">
+        <div class="search-bar-content">
+          {{ module.edit_search_section.edit_search_box_content }}
+        </div>
+        <div class="search-icon icon-close"><i class="fas fa-times"></i></div>
+      </div>
+      <!-- Search Section Start -->
+      <div class="hs-search-field">
+        <div class="hs-search-field__bar">
+          <form action="/{{ site_settings.content_search_results_page_path }}">
+            {% if module.field_label %}
+              <label for="term">{{ module.field_label }}</label>
+            {% endif %}
+            <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="{{ module.field_label || "Search" }}" placeholder="{{ module.placeholder }}">
+            
+            
+            <input type="hidden" name="type" value="SITE_PAGE">
+            
+            
+            <input type="hidden" name="type" value="LANDING_PAGE">
+            
+            
+            <input type="hidden" name="type" value="BLOG_POST">
+            <input type="hidden" name="type" value="LISTING_PAGE">
+            
+            
+            <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+            
+            {% if module.include_search_button %}
+              <button aria-label="Search">{% icon name="search" style="solid" %}</button>
+            {% endif %}
+          </form>
+        </div>
+      <ul class="hs-search-field__suggestions"></ul>
+    </div>
+    <!-- end -->
+  </div>
+</div>
+<!-- end -->
+
+<div id="stop" class="scrollTop">
+  <span><a href=""><i class="fa fa-arrow-up"></i></a></span>
+</div>

@@ -1,0 +1,207 @@
+[ {
+  "id" : "3cbc1b11-f0d7-0415-00b5-e543ce7007e4",
+  "name" : "edit_service_module_listing",
+  "display_width" : null,
+  "label" : "Edit Service Module Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "bba8a70d-b28e-b201-96c1-ed53eb71ff81",
+    "name" : "edit_module_image",
+    "display_width" : null,
+    "label" : "Edit Module Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/annie-spratt-QckxruozjRg-unsplash%20(1).jpg",
+      "alt" : "annie-spratt-QckxruozjRg-unsplash (1)",
+      "loading" : "lazy",
+      "width" : 7952,
+      "height" : 5304,
+      "max_width" : 7952,
+      "max_height" : 5304
+    }
+  }, {
+    "id" : "eb30a655-ee84-dff8-b8f6-77d8ff75c608",
+    "name" : "edit_content_section",
+    "display_width" : null,
+    "label" : "Edit Content Section",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "518d9d2e-d193-0394-0b84-1210e996643f",
+      "name" : "edit_content",
+      "display_width" : null,
+      "label" : "Edit Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2 id=\"business-intelligence\" data-aos=\"fade-in\" data-aos-delay=\"50\">BUSINESS INTELLIGENCE</h2>\n<span data-aos=\"fade-in\" data-aos-delay=\"50\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>"
+    }, {
+      "id" : "d240dcd3-57d3-1b81-a74c-511994ad7b8c",
+      "name" : "edit_button_group",
+      "display_width" : null,
+      "label" : "Edit Button Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "1110415a-8dd4-5a79-2db7-b90c414bf255",
+        "name" : "edit_button_text",
+        "display_width" : null,
+        "label" : "Edit Button Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "MORE ABOUT THIS SERVICE"
+      }, {
+        "id" : "faa0f6c9-7aff-5bc2-e3f2-bee252c6aa4b",
+        "name" : "edit_button_link",
+        "display_width" : null,
+        "label" : "Edit Button Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "edit_button_text" : "MORE ABOUT THIS SERVICE",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_content" : "<h2 id=\"business-intelligence\" data-aos=\"fade-in\" data-aos-delay=\"50\">BUSINESS INTELLIGENCE</h2>\n<span data-aos=\"fade-in\" data-aos-delay=\"50\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+      "edit_button_group" : {
+        "edit_button_text" : "MORE ABOUT THIS SERVICE",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_module_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/annie-spratt-QckxruozjRg-unsplash%20(1).jpg",
+      "alt" : "annie-spratt-QckxruozjRg-unsplash (1)",
+      "loading" : "lazy",
+      "width" : 7952,
+      "height" : 5304,
+      "max_width" : 7952,
+      "max_height" : 5304
+    },
+    "edit_content_section" : {
+      "edit_content" : "<h2 id=\"business-intelligence\" data-aos=\"fade-in\" data-aos-delay=\"50\">BUSINESS INTELLIGENCE</h2>\n<span data-aos=\"fade-in\" data-aos-delay=\"50\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+      "edit_button_group" : {
+        "edit_button_text" : "MORE ABOUT THIS SERVICE",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  }, {
+    "edit_module_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/annie-spratt-QckxruozjRg-unsplash%20(1).jpg",
+      "alt" : "annie-spratt-QckxruozjRg-unsplash (1)",
+      "loading" : "lazy",
+      "width" : 7952,
+      "height" : 5304,
+      "max_width" : 7952,
+      "max_height" : 5304
+    },
+    "edit_content_section" : {
+      "edit_content" : "<h2 id=\"business-intelligence\" data-aos=\"fade-in\" data-aos-delay=\"50\">BUSINESS INTELLIGENCE</h2>\n<span data-aos=\"fade-in\" data-aos-delay=\"50\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+      "edit_button_group" : {
+        "edit_button_text" : "MORE ABOUT THIS SERVICE",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  }, {
+    "edit_module_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/annie-spratt-QckxruozjRg-unsplash%20(1).jpg",
+      "alt" : "annie-spratt-QckxruozjRg-unsplash (1)",
+      "loading" : "lazy",
+      "width" : 7952,
+      "height" : 5304,
+      "max_width" : 7952,
+      "max_height" : 5304
+    },
+    "edit_content_section" : {
+      "edit_content" : "<h2 id=\"business-intelligence\" data-aos=\"fade-in\" data-aos-delay=\"50\">BUSINESS INTELLIGENCE</h2>\n<span data-aos=\"fade-in\" data-aos-delay=\"50\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+      "edit_button_group" : {
+        "edit_button_text" : "MORE ABOUT THIS SERVICE",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  } ]
+} ]

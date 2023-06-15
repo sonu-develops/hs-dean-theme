@@ -1,0 +1,54 @@
+<div class="faq-section1">
+    <div class="container-faq">
+        <div class="Accordions">
+          {% for item in module.edit_faq_listing %}
+            <div class="Accordion_item">
+                <div class="title_tab">
+                    <h3 class="title">{{ item.edit_faq_heading }}<span class="icon"></span></h3>
+                </div>
+                <div class="inner_content">
+                    <div class="inner_cont-inner">
+                        {{ item.edit_content }}
+                    </div>
+                </div>
+            </div>
+           {% endfor %}
+        </div>
+    </div>
+</div>
+
+ 
+{% require_css %}
+<style>
+{% scope_css %}
+
+
+.faq-section1
+{
+
+	background-color: rgba({{ module.style.edit_module_background_color.color|convert_rgb }}, {{ module.style.edit_module_background_color.opacity / 100 }});
+}
+.Accordion_item .title_tab
+{
+
+background-color: rgba({{ module.style.edit_faq_section_listing_background_color.color|convert_rgb }}, {{ module.style.edit_faq_section_listing_background_color.opacity / 100 }});
+
+}
+
+.inner_content
+  {
+
+  	background-color: rgba({{ module.style.edit_faq_section_listing_answer_background_color.color|convert_rgb }}, {{ module.style.edit_faq_section_listing_answer_background_color.opacity / 100 }});
+
+
+  
+  }
+
+.faq-section1
+  {
+  {{ module.style.module_spacing.css }}
+  }
+  
+{% end_scope_css %}
+</style>
+{% end_require_css %}

@@ -1,0 +1,60 @@
+[ {
+  "id" : "233a2557-b292-af09-5c56-e846038fa8d4",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "85e58b36-8115-0838-8e1c-6c19328dc6e6",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "89732b66-79ea-9bb5-0224-8eba630286b0",
+  "name" : "edit_content_listing",
+  "display_width" : null,
+  "label" : "Edit Content Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "a3214bb3-044c-fccc-cb8e-f9931ddb1950",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Features written in the form of a benefit statement"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_content" : "Features written in the form of a benefit statement"
+  }, {
+    "edit_content" : "Features written in the form of a benefit statement"
+  }, {
+    "edit_content" : "Features written in the form of a benefit statement"
+  }, {
+    "edit_content" : "Features written in the form of a benefit statement"
+  } ]
+} ]

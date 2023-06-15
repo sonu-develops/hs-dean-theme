@@ -1,0 +1,125 @@
+[ {
+  "id" : "bc0421b8-178c-bbfa-3b60-0d9c0f0b8600",
+  "name" : "edit_heading_content",
+  "display_width" : null,
+  "label" : "Edit Heading Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: center;\"><span>Loved by teams and companies you know</span></div>"
+}, {
+  "id" : "0380a8c8-8079-0564-0433-3f0ed298a674",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1b740fdd-e6df-0a1a-ec9f-ff88eda28043",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "32b865a4-beda-cee9-bea4-aa387bb0a6a8",
+  "name" : "edit_logo_listing_group",
+  "display_width" : null,
+  "label" : "Edit Logo Listing Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "1ab36356-13df-12f8-ddea-fd87bb5d9229",
+    "name" : "add_logo",
+    "display_width" : null,
+    "label" : "Add Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/61e7529aaf71ee8d6459f0fe_gettyimages-logo.svg",
+      "alt" : "61e7529aaf71ee8d6459f0fe_gettyimages-logo",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 32,
+      "max_width" : 175,
+      "max_height" : 32
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "add_logo" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/61e7529aaf71ee8d6459f0fe_gettyimages-logo.svg",
+      "alt" : "61e7529aaf71ee8d6459f0fe_gettyimages-logo",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 32,
+      "max_width" : 175,
+      "max_height" : 32
+    }
+  }, {
+    "add_logo" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/61e7529aaf71ee8d6459f0fe_gettyimages-logo.svg",
+      "alt" : "61e7529aaf71ee8d6459f0fe_gettyimages-logo",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 32,
+      "max_width" : 175,
+      "max_height" : 32
+    }
+  }, {
+    "add_logo" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/61e7529aaf71ee8d6459f0fe_gettyimages-logo.svg",
+      "alt" : "61e7529aaf71ee8d6459f0fe_gettyimages-logo",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 32,
+      "max_width" : 175,
+      "max_height" : 32
+    }
+  }, {
+    "add_logo" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/61e7529aaf71ee8d6459f0fe_gettyimages-logo.svg",
+      "alt" : "61e7529aaf71ee8d6459f0fe_gettyimages-logo",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 32,
+      "max_width" : 175,
+      "max_height" : 32
+    }
+  }, {
+    "add_logo" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/61e7529aaf71ee8d6459f0fe_gettyimages-logo.svg",
+      "alt" : "61e7529aaf71ee8d6459f0fe_gettyimages-logo",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 32,
+      "max_width" : 175,
+      "max_height" : 32
+    }
+  } ]
+} ]

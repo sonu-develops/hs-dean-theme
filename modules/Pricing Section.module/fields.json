@@ -1,0 +1,292 @@
+[ {
+  "id" : "f490572a-8e42-fe98-1f0a-63d9f4475771",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "52dbe7d8-1eba-9adc-bb17-5f70f6195e33",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "5d05e383-14a4-8d52-a3c7-4ae1a687cea5",
+  "name" : "edit_pricing_card",
+  "display_width" : null,
+  "label" : "Edit Pricing Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "ad8e51f8-fa81-1858-9e64-a71d411a4e17",
+    "name" : "active_recommended_section",
+    "display_width" : null,
+    "label" : "Active Recommended Section",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "f95855c7-8986-9e87-a47b-bb5b9263d8e8",
+    "name" : "edit_recommended_section",
+    "display_width" : null,
+    "label" : "Edit Recommended Section",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "ad8e51f8-fa81-1858-9e64-a71d411a4e17",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "d65cca2f-f1d0-74b2-4096-9b57f9e61e36",
+      "name" : "edit_recommended_section",
+      "display_width" : null,
+      "label" : "Edit RECOMMENDED Section",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span style=\"color: #ffffff;\"><span>RECOMMENDEDENDED</span></span>"
+    }, {
+      "id" : "473ba3a4-c5bf-f549-ca99-890377b4bace",
+      "name" : "recommended_bg_color_setting",
+      "display_width" : null,
+      "label" : "RECOMMENDED BG Color Setting",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#5767af",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_recommended_section" : "<span style=\"color: #ffffff;\"><span>RECOMMENDEDENDED</span></span>",
+      "recommended_bg_color_setting" : {
+        "color" : "#5767af",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "9586019e-6526-8bd0-f98c-249854ef1b33",
+    "name" : "edit_heading_c",
+    "display_width" : null,
+    "label" : "Edit Heading C",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2 id=\"basic\" data-mh=\"750480286\">BASIC</h2>"
+  }, {
+    "id" : "fa4a8853-3b0b-95d3-58ea-973978c9960d",
+    "name" : "edit_card_descripotion_",
+    "display_width" : null,
+    "label" : "Edit Card Descripotion ",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span>Description. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>"
+  }, {
+    "id" : "fc7f7ba3-7c0a-d74c-64d8-fa3d05558814",
+    "name" : "edit_button_group",
+    "display_width" : null,
+    "label" : "Edit Button Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9ee84e8f-2818-7c6f-fb45-63e2a20405be",
+      "name" : "edit_button_text",
+      "display_width" : null,
+      "label" : "Edit Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Register Now !"
+    }, {
+      "id" : "2e07e309-5f25-3652-2b14-9e97a9d776fd",
+      "name" : "edit_button_link",
+      "display_width" : null,
+      "label" : "Edit Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "a1ce7492-fa10-8493-82ce-849f261112e1",
+      "name" : "choose_button_style",
+      "display_width" : null,
+      "label" : "Choose Button Style",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "button", "Default Button " ], [ "transparent_cta", "Transparent CTA" ], [ "white_cta", "White CTA" ], [ "simple_cta", "Simple CTA" ], [ "arrow_cta", "Arrow CTA" ], [ "simple_cta_with_arrow", "simple cta with arrow" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "type" : "choice",
+      "default" : "button"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_button_text" : "Register Now !",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "choose_button_style" : "button"
+    }
+  }, {
+    "id" : "53e56764-bf7a-f3b8-d4da-f7a55d060e00",
+    "name" : "edit_card_bg_color",
+    "display_width" : null,
+    "label" : "Edit Card BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#f4f6fa",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "f9aa6407-8e9e-33b2-ae9e-4325eb78c2b3",
+    "name" : "edit_price_amount",
+    "display_width" : null,
+    "label" : "Edit Price Amount",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3><span>$99/mo</span></h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "active_recommended_section" : false,
+    "edit_recommended_section" : {
+      "edit_recommended_section" : "<span style=\"color: #ffffff;\"><span>RECOMMENDEDENDED</span></span>",
+      "recommended_bg_color_setting" : {
+        "color" : "#5767af",
+        "opacity" : 100
+      }
+    },
+    "edit_heading_c" : "<h2 id=\"basic\" data-mh=\"750480286\">BASIC</h2>",
+    "edit_card_descripotion_" : "<span>Description. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+    "edit_button_group" : {
+      "edit_button_text" : "Register Now !",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "choose_button_style" : "button"
+    },
+    "edit_card_bg_color" : {
+      "color" : "#f4f6fa",
+      "opacity" : 100
+    },
+    "edit_price_amount" : "<h3><span>$99/mo</span></h3>"
+  }, {
+    "active_recommended_section" : false,
+    "edit_recommended_section" : {
+      "edit_recommended_section" : "<span style=\"color: #ffffff;\"><span>RECOMMENDEDENDED</span></span>",
+      "recommended_bg_color_setting" : {
+        "color" : "#5767af",
+        "opacity" : 100
+      }
+    },
+    "edit_heading_c" : "<h2 id=\"basic\" data-mh=\"750480286\">BASIC</h2>",
+    "edit_card_descripotion_" : "<span>Description. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+    "edit_button_group" : {
+      "edit_button_text" : "Register Now !",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "choose_button_style" : "button"
+    },
+    "edit_card_bg_color" : {
+      "color" : "#f4f6fa",
+      "opacity" : 100
+    },
+    "edit_price_amount" : "<h3><span>$99/mo</span></h3>"
+  }, {
+    "active_recommended_section" : false,
+    "edit_recommended_section" : {
+      "edit_recommended_section" : "<span style=\"color: #ffffff;\"><span>RECOMMENDEDENDED</span></span>",
+      "recommended_bg_color_setting" : {
+        "color" : "#5767af",
+        "opacity" : 100
+      }
+    },
+    "edit_heading_c" : "<h2 id=\"basic\" data-mh=\"750480286\">BASIC</h2>",
+    "edit_card_descripotion_" : "<span>Description. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</span>",
+    "edit_button_group" : {
+      "edit_button_text" : "Register Now !",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "choose_button_style" : "button"
+    },
+    "edit_card_bg_color" : {
+      "color" : "#f4f6fa",
+      "opacity" : 100
+    },
+    "edit_price_amount" : "<h3><span>$99/mo</span></h3>"
+  } ]
+} ]

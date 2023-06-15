@@ -1,0 +1,226 @@
+[ {
+  "id" : "c0760124-0ce1-5bec-cad8-8d8e51a703b8",
+  "name" : "choose_button_type",
+  "display_width" : null,
+  "label" : "Choose Button Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "button", "Default" ], [ "transparent_cta", "Transparent Button" ], [ "white_cta", "White Button" ], [ "simple_cta", "Simple Button" ], [ "arrow_cta", "Arrow Button" ], [ "simple_cta_with_arrow", "Simple Button With Arrow" ], [ "custom-button", "Custom Button" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "button"
+}, {
+  "id" : "8e2c8bc4-cc05-ff0b-99a8-e7ed70d96dc7",
+  "name" : "choose_button_allignment",
+  "display_width" : null,
+  "label" : "Choose Button Allignment",
+  "help_text" : "Choose to align left,center and right",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "left"
+}, {
+  "id" : "85af95cd-b4f5-857b-f8a7-e40e8bcc0a25",
+  "name" : "button_name_and_link",
+  "display_width" : null,
+  "label" : "Button Name And Link",
+  "help_text" : "Change Name and Link",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "64398c1a-ebde-970c-a096-8e78ae4ade6b",
+    "name" : "add_button_text",
+    "display_width" : null,
+    "label" : "Add Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get Started Now!"
+  }, {
+    "id" : "cdad7940-c129-2502-0d36-6b128c4585c6",
+    "name" : "add_button_link",
+    "display_width" : null,
+    "label" : "Add Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "add_button_text" : "Get Started Now!",
+    "add_button_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "64381fed-a86a-536c-ee69-23f7fad51111",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "32641b8c-4fa5-5544-a629-62c87f9cd916",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "923586ba-7fd5-a442-ba18-47140de9d8b9",
+  "name" : "button_style",
+  "display_width" : null,
+  "label" : "Button Style",
+  "help_text" : "Change Border, Background and Text color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c0760124-0ce1-5bec-cad8-8d8e51a703b8",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "custom-button",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "363b6e6c-94fb-22f0-5c61-09999e416301",
+    "name" : "add_border_color",
+    "display_width" : null,
+    "label" : "Add Border Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FF8F59",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "386a51a8-ec9e-ba9f-6bf5-3061fc62061f",
+    "name" : "add_background_color",
+    "display_width" : null,
+    "label" : "Add Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FF8F59",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "288ed8e3-64e7-c95a-b42d-dfc02a17a36f",
+    "name" : "add_text_color",
+    "display_width" : null,
+    "label" : "Add Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "e757e315-2549-af5f-5c87-cb4990489c40",
+    "name" : "add_box_shadow",
+    "display_width" : null,
+    "label" : "Add Box Shadow",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "0px 10px 25px rgb(0 0 0 / 20%)"
+  }, {
+    "id" : "4dcd22d3-f7e9-4f8a-cde8-ea69cc0e454b",
+    "name" : "add_vertical_top_bottom_spacing",
+    "display_width" : null,
+    "label" : "Add Vertical Top Bottom Spacing",
+    "help_text" : "This will work as padding-top and padding-bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "step" : 1,
+    "type" : "number",
+    "default" : 16
+  }, {
+    "id" : "638dee68-ca4d-dc0d-ccc5-fa140f8ed634",
+    "name" : "add_horizontal_left_right_spacing",
+    "display_width" : null,
+    "label" : "Add Horizontal Left Right Spacing",
+    "help_text" : "This will work as padding-left and padding-right",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "step" : 1,
+    "type" : "number",
+    "default" : 16
+  }, {
+    "id" : "5ef1a2d3-4595-d8fa-741c-2f165f49e108",
+    "name" : "add_border_corner",
+    "display_width" : null,
+    "label" : "Add Border Corner",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "step" : 1,
+    "type" : "number",
+    "default" : 5
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "add_border_color" : {
+      "color" : "#FF8F59",
+      "opacity" : 100
+    },
+    "add_background_color" : {
+      "color" : "#FF8F59",
+      "opacity" : 100
+    },
+    "add_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "add_box_shadow" : "0px 10px 25px rgb(0 0 0 / 20%)",
+    "add_vertical_top_bottom_spacing" : 16,
+    "add_horizontal_left_right_spacing" : 16,
+    "add_border_corner" : 5
+  }
+} ]

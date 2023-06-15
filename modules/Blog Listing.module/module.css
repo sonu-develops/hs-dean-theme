@@ -1,0 +1,12 @@
+.blog-list-feature {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+      font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.blog-list-feature a {
+    font-weight: bold;
+}

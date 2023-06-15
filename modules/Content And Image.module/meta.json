@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Group%201.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 99815418480,
+  "label" : "Content And Image",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,140 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Product Page 
+screenshotPath: ../images/template-previews/Product.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+ 
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+<!-- Section Start-->
+  {% dnd_section  
+    max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Banner.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+ <!-- Section Start--> 
+{% dnd_section 
+max_width={{ theme.spacing.maximum_content_width }},
+     vertical_alignment='MIDDLE'
+         
+  %}
+    {% dnd_column, width=12, offset=0 %}
+        {% dnd_row vertical_alignment='MIDDLE'%}
+          {% dnd_column
+            offset=0,
+            width=6
+          %}
+            
+{% dnd_row %}
+
+            {% dnd_module path="@hubspot/rich_text",label="Heading And Description Text" %}
+          {% module_attribute "html" %} 
+            <div style="text-align:left;"> 
+              <span style="font-size: 16px;
+    color: #5867ad;">- BUKU INI UNTUK SIAPA</span>
+              <h2> This is a introductory content that explains your offering</h2>
+             
+            </div>
+          {% end_module_attribute %}
+        {% end_dnd_module %}
+
+             {% end_dnd_row %}  
+            {% end_dnd_column %}
+          {% dnd_column
+            offset=6,
+            width=6
+          %}
+            {% dnd_row %}
+           {% dnd_module path="@hubspot/rich_text",label="Heading And Description Text" %}
+                {% module_attribute "html" %} 
+                  <p>
+                 Buku ini bukan hanya untuk front-end developer yang ingin meningkatkan skill, buku ini juga cocok untuk back-end developer dan UI designer agar dapat menulis style tanpa harus menulis kode CSS dan tanpa mengandalkan front-end developer!
+                  </p>            
+                {% end_module_attribute %}
+              {% end_dnd_module %}
+          {% end_dnd_row %}           
+        {% end_dnd_column %}  
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+<!-- Section End-->
+
+<!-- Section Start-->
+{% dnd_section  
+   max_width={{ theme.spacing.maximum_content_width }}
+  %}
+  
+          {% dnd_column %} 
+            {% dnd_row %}
+           {% dnd_module path="../modules/Cards.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section  
+max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Testimonial Card.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+<!-- Section Start-->
+{% dnd_section 
+     max_width={{ theme.spacing.maximum_content_width }} 
+         %} 
+          {% dnd_column %}
+             {% dnd_row %}
+           {% dnd_module path="../modules/Content And Image.module", section_alignment="two-col-fl" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}  
+  {% end_dnd_section %}
+<!-- Section end-->
+<!-- Section Start-->
+{% dnd_section 
+    
+   max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Pricing Section.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+   
+{% end_dnd_area %}
+{% endblock body %}

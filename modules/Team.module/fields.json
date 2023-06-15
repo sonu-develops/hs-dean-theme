@@ -1,0 +1,121 @@
+[ {
+  "id" : "d474b301-7dee-94e4-daed-895065aa13f9",
+  "name" : "edit_team_module",
+  "display_width" : null,
+  "label" : "Edit Team Module",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "d7f67c44-3e82-845b-becd-d8d7b9524196",
+    "name" : "edit_team_member_image",
+    "display_width" : null,
+    "label" : "Edit Team Member Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    }
+  }, {
+    "id" : "debbb92c-083f-f1ce-e6b9-36911a9caacf",
+    "name" : "edit_profile_content",
+    "display_width" : null,
+    "label" : "Edit Profile Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_team_member_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    },
+    "edit_profile_content" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  }, {
+    "edit_team_member_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    },
+    "edit_profile_content" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  }, {
+    "edit_team_member_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    },
+    "edit_profile_content" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  }, {
+    "edit_team_member_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    },
+    "edit_profile_content" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  }, {
+    "edit_team_member_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    },
+    "edit_profile_content" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  }, {
+    "edit_team_member_image" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+      "alt" : "michael-dam-mEZ3PoFGs_k-unsplash",
+      "loading" : "lazy",
+      "width" : 3744,
+      "height" : 5616,
+      "max_width" : 3744,
+      "max_height" : 5616
+    },
+    "edit_profile_content" : "<h3>Tom Form</h3>\n<p><span>MANAGING DIRECTOR</span></p>"
+  } ]
+} ]

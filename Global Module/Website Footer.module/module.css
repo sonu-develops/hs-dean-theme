@@ -1,0 +1,76 @@
+
+
+.foot-menu-inner {
+    padding-top: 40px;
+}
+.form-footer form .actions input.hs-button.primary.large {
+    border-radius: 0 4px 4px 0px;
+    font-size: 16px;
+}
+ .footer-menu-one h4, .footer-menu-two h4, .footer-form h4  
+{
+   font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.form-footer {
+    margin-top: -15px;
+}
+.footer-first {
+    width: 75%;
+}
+ 
+.form-footer form {
+    padding: 0 !important;
+    background-color: unset !important;
+    box-shadow: unset !important;
+    display: flex;
+    align-items: baseline;
+}
+.footer-content {
+    padding: 15px 0;
+}
+.footer-menu ul {
+    display: contents;
+}
+  
+.footer-social ul {
+    padding: 0;
+    display: flex;
+}
+
+ 
+.footer-social ul li {
+    list-style: none;
+    padding-right: 15px;
+}
+.footer-social-share ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-social-share ul li {
+    list-style: none;
+    padding-right: 10px;
+}
+.footer-social-share ul li i {
+    color: #fff;
+}
+
+.footer-social-share ul li a {
+    padding-left: 20px;
+}
+
+.footer-inner-main.d-flex {
+    justify-content: center;
+}
+.privacy-menu ul {
+    justify-content: center;
+}
+.col-3 {
+       width: 33%;
+    max-width: 33%;
+    flex:  0 0 33%;
+}

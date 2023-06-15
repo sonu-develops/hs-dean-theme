@@ -1,0 +1,199 @@
+[ {
+  "id" : "cb5d6e55-9b07-0fd8-67f2-886c6db921e8",
+  "name" : "choose_image_and_content_direction",
+  "display_width" : null,
+  "label" : "Choose Image and Content Direction",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "mt-section-lt", "Left Side Content and Right Side Image" ], [ "mt-section-rt", "Left Side Image and Right Side Content" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "mt-section-lt"
+}, {
+  "id" : "bf52ef8e-cf3b-f4d0-676c-50e61e54888a",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "96616418-b917-60ea-2860-e775b5607ee9",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "c99594a2-0cbe-831c-3056-3069738b2436",
+  "name" : "module_content_section",
+  "display_width" : null,
+  "label" : "Module Content Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5e9e5695-9f5e-29cb-0f19-5bff4bfc5ee3",
+    "name" : "edit_content_and_image_section",
+    "display_width" : null,
+    "label" : "Edit Content and Image Section",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "982255d7-8c56-c554-efe8-855d774f1985",
+      "name" : "edit_content_section",
+      "display_width" : null,
+      "label" : "Edit Content Section",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span style=\"color: #5867ad;\"><strong>Mountains Theme </strong></span>\n<h1>A THEME<br>MADE WITH PASSION</h1>\n<p>For building responsive quality websites with ease and the new Drag and Drop area of the Hubspot CMS.</p>"
+    }, {
+      "id" : "5748b751-df2d-cf31-d3ad-2be6ef386bb5",
+      "name" : "edit_button_group",
+      "display_width" : null,
+      "label" : "Edit Button Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "9267ccc2-5683-f5e3-d4aa-622c9fcb7585",
+        "name" : "edit_button_content",
+        "display_width" : null,
+        "label" : "Edit Button Content",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Contact Us"
+      }, {
+        "id" : "c43feb94-d27a-0276-c863-0c265d4ceb6b",
+        "name" : "edit_button_link",
+        "display_width" : null,
+        "label" : "Edit Button Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "a5d4eb7f-25c0-555d-409a-d86f14ae0de9",
+        "name" : "choose_button_color_style",
+        "display_width" : null,
+        "label" : "Choose Button Color Style",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "button", "Default Button " ], [ "transparent_cta", "Transparent CTA" ], [ "white_cta", "White CTA" ], [ "simple_cta", "Simple CTA" ], [ "arrow_cta", "Arrow CTA" ], [ "simple_cta_with_arrow", "simple cta with arrow" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "type" : "choice",
+        "default" : "button"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "edit_button_content" : "Contact Us",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "choose_button_color_style" : "button"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_content_section" : "<span style=\"color: #5867ad;\"><strong>Mountains Theme </strong></span>\n<h1>A THEME<br>MADE WITH PASSION</h1>\n<p>For building responsive quality websites with ease and the new Drag and Drop area of the Hubspot CMS.</p>",
+      "edit_button_group" : {
+        "edit_button_content" : "Contact Us",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "choose_button_color_style" : "button"
+      }
+    }
+  }, {
+    "id" : "d998c255-3669-c78b-ee85-4868a5e65594",
+    "name" : "edit_image_",
+    "display_width" : null,
+    "label" : "Edit Image ",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Product%20presentation-rafiki.svg",
+      "alt" : "Product presentation-rafiki",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_content_and_image_section" : {
+      "edit_content_section" : "<span style=\"color: #5867ad;\"><strong>Mountains Theme </strong></span>\n<h1>A THEME<br>MADE WITH PASSION</h1>\n<p>For building responsive quality websites with ease and the new Drag and Drop area of the Hubspot CMS.</p>",
+      "edit_button_group" : {
+        "edit_button_content" : "Contact Us",
+        "edit_button_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "choose_button_color_style" : "button"
+      }
+    },
+    "edit_image_" : {
+      "size_type" : "auto",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Product%20presentation-rafiki.svg",
+      "alt" : "Product presentation-rafiki",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    }
+  }
+} ]

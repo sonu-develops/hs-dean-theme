@@ -1,0 +1,476 @@
+
+/* Nav Bar Css Start */
+% set ulColor       = "" %} /* Set ul background color */
+  {% set liColor       = "" %} /* Set li background Color */
+  {% set aColor        = "" %} /* Set link Color */
+  {% set aColorHover   = "" %} /* Set link Hover Color */
+
+  /* Parent List */
+  .custom-menu-primary .hs-menu-wrapper > ul{ 
+    background:{{ ulColor }};
+  }
+  .custom-menu-primary .hs-menu-wrapper > ul > li{
+    background:{{ liColor }};
+  }
+
+
+  /* Child List */
+  .custom-menu-primary .hs-menu-wrapper > ul ul{}
+  .custom-menu-primary .hs-menu-wrapper > ul ul li{
+    background:{{ liColor }};
+  }
+
+
+
+  /* Override max width on menu links */
+  .custom-menu-primary .hs-menu-wrapper > ul li a, 
+  .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+    overflow: visible !important;
+    max-width: none !important;
+    width: auto !important; 
+    font-size: 16px !important; 
+    font-weight: 500 !important; 
+
+  }
+
+  /* Fix menu disappearing on desktop after toggling mobile menu */
+  @media screen and (min-width:992px) {
+    .custom-menu-primary .hs-menu-wrapper { 
+      display:block !important;
+    }
+   
+
+
+  }
+
+
+
+
+  /* ==========================================================================
+  Mobile Menu - Hubspot Standard Toggle Menu
+  ========================================================================== */
+
+
+  /**
+  * Special Note
+  *
+  * When the menu is open, a class of .mobile-open is applied to the body. You can 
+  * use this for custom styling on any element when the menu is in the open position.                     
+  */
+
+  .mobile-trigger, .child-trigger{
+    display: none; /* Hide button on Desktop */
+  }
+
+  @media (max-width: 991px)
+  {
+    .Cl-navigation .hs-menu-wrapper.hs-menu-flow-horizontal.flyouts .hs-item-has-children:hover>.hs-menu-children-wrapper li a {
+      padding: 0px 10px 0px 28px;
+    }
+     .lang-switch-right.button {
+    display: none;
+}
+    .header__search.header--element.search-container.opened {
+
+      padding-top: 60px;
+
+    }
+
+    /* Variables
+    ========================================================================== */
+
+    {% set menuColorMobile = "#000000" %}   /* Set Mobile Menu Background Color */
+    {% set aColorMobile = "#ffffff" %}      /* Set Link Color */
+    {% set aColorHoverMobile = "#ffffff" %} /* Set Link Hover Color */
+
+    /* 
+    * Menu Reset
+    *
+    * Remove styling from desktop version of custom-menu-primary. Place any 
+    * additional CSS you want removed from the mobile menu in this reset 
+    */
+    .search_button {
+      padding-right: 6px;
+      cursor: pointer;
+      position: relative;
+      right: 25px;
+      top: 0px;
+    }
+    .header-Module .Cl-web-button a {
+      font-size: 9px;
+      padding: 8px 6px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      display: flex;
+      width: 96px;
+      text-align: center;
+      justify-content: center;
+    }
+    /*   .Cl-navigation .hs-menu-wrapper.hs-menu-flow-horizontal.flyouts .hs-item-has-children:hover>.hs-menu-children-wrapper li:hover {
+    background-color: unset !important;
+
+  } */
+    .Cl-navigation .hs-menu-wrapper.hs-menu-flow-horizontal.flyouts .hs-item-has-children:hover>.hs-menu-children-wrapper {
+
+      padding-top: 0;
+    }
+    .hs-menu-wrapper li.hs-menu-item.hs-menu-depth-1.hs-item-has-children>a:before
+    {
+      display:none;
+    }
+    .Cl-navigation .hs-menu-wrapper.hs-menu-flow-horizontal.flyouts .hs-item-has-children:hover>.hs-menu-children-wrapper {
+
+      box-shadow: unset !important;
+
+    }
+    .custom-menu-primary,
+    .custom-menu-primary .hs-menu-wrapper > ul,
+    .custom-menu-primary .hs-menu-wrapper > ul li,
+    .custom-menu-primary .hs-menu-wrapper > ul li a{
+      display: block;
+      float: none;
+      position: static;
+      top: auto;
+      right: auto;
+      left: auto;
+      bottom: auto;
+      padding: 0px;
+      margin: 0px;
+      background-image: none;
+      background-color: transparent;
+      border: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow:    none;
+      box-shadow:         none; 
+      max-width: none;
+      width: 100%;
+      height: auto;
+      line-height: 1;  
+      font-weight: normal;
+      text-decoration: none;
+      text-indent: 0px;
+      text-align: left;
+
+    }
+    .header__search.header--element.search-container 
+    {
+      padding: 20px 20px;
+
+    }
+
+    .header-Module .Cl-website-h-main 
+    {
+
+      position: relative;
+    }
+    .Cl-web-left .Cl-web-logo {
+      position: relative;
+      left: 10px;
+      top: 2px;
+    }
+    .header-Module .Cl-website-h-main .Cl-web-left {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+
+    }
+
+    .header-Module .Cl-website-h-main .Cl-web-right {
+      width: 100% !important;
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+
+    }
+    .custom-menu-primary .hs-menu-wrapper>ul li a 
+    {  
+      padding-left: 25px !important;
+    }
+
+    /*   Toggle cross */
+    .mobile-open .mobile-trigger{ z-index: 9999999; }
+    .header_middle_main .mobile-trigger:hover{
+      text-decoration: none; /* Removes link text underline on button */
+      color:blue;
+      background-color:inherit; 
+      border-color: transparent;
+    }
+
+
+    .mobile-open .mobile-trigger i, 
+    .mobile-open .mobile-trigger i:before, 
+    .mobile-open .mobile-trigger i:after{
+      width: 26px; /* Icon line width */
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+
+    }
+
+    .mobile-open .mobile-trigger i::after{ display: none; }
+    .mobile-open .mobile-trigger i::before {
+      transform: rotate(-90deg);
+      top: 0;
+    }
+
+    .mobile-open .mobile-trigger i {
+      transform: rotate(45deg);
+    }
+
+    .mobile-open .login_mobile{ display: block; }
+
+    .mobile-open .header__language-switcher.header--element_n{
+      display: block;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+    }
+    .mobile-open .login_mobile{ display: block; }
+    .mobile-open .login_mobile a{     color: #051b35;
+      font-size: 14.22px;
+      font-weight: 300;
+      letter-spacing: -0.09px;
+      text-decoration: none;
+    }
+
+
+
+    .mobile-open .header__language-switcher.header--element_n {
+      display: block;
+      width: 100%;
+      float: left;
+      border: 0;
+      padding: 0;
+    }
+
+
+    /* Toggle Button
+    ========================================================================== */
+
+    .mobile-trigger{
+      display: inline-block !important; /* Show button on mobile */
+      cursor: pointer; /* Mouse pointer type on hover */
+      position: absolute; /*******************************************/
+      top: 0px;          /* Position Button at right of screen  */
+      right: 50px;       /*******************************************/
+      width: auto; /* Button width */
+      height: auto; /* Button height */      
+      padding: 7px 10px 8px 10px;
+
+      border: 0;
+      font-size: 16px;
+      font-weight: normal;
+      text-align: left;
+      text-transform: uppercase;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      color: {{ menuColorMobile }}; 
+    }
+   
+
+    /* Change button when menu is open */
+    .mobile-open .mobile-trigger{
+      color:{{ aColorHoverMobile }}; 
+      border-color: transparent;
+    }
+    .sticky .custom-menu-primary .hs-menu-wrapper>ul li a {
+      padding: 0 10px;
+    }
+
+    /* Toggle Button Icon
+    ========================================================================== */
+
+    .mobile-trigger i{
+      display: inline;
+      position: relative;
+      top: -4px;
+    }
+    .mobile-trigger i:before, .mobile-trigger i:after{
+      position: absolute;
+      content: '';
+    }
+    .mobile-trigger i, .mobile-trigger i:before, .mobile-trigger i:after{
+      width: 22px; /* Icon line width */
+      height: 2px; /* Icon line height */
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+
+      display: inline-block;
+    }
+    .mobile-trigger i:before{
+      top: -6px; /* Position top line */
+    }
+    .mobile-trigger i:after{
+      top: 6px; /* Position bottom line */
+    }
+
+    .mobile-trigger:hover i, .mobile-trigger:hover i:before, .mobile-trigger:hover i:after,  
+    .mobile-open .mobile-trigger i, .mobile-open .mobile-trigger i:before, .mobile-open .mobile-trigger i:after{
+      background-color: #000; /* Icon color */
+    }
+
+
+    /* Child Toggle Button
+    ========================================================================== */
+
+    .child-trigger{
+      display: block !important; /* Hide button on Desktop */
+      cursor: pointer; /* Mouse pointer type on hover */
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 55px !important; /* Button width */
+      min-width: 55px !important;
+      height: 45px !important; /* Button height */  
+      padding: 0 !important;
+      border-left: 1px solid rgba(120,120,120,0.2) !important;
+    }
+    .child-trigger:hover{
+      text-decoration: none;
+    }
+    .child-trigger i{
+      position: relative;
+      top: 50%; /* Centers icon inside button */
+      margin: 0 auto !important;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    .child-trigger i:after{
+      position: absolute;
+      content: '';
+    }
+    .child-trigger i, .child-trigger i:after{
+      width: 10px; /* Icon line width */
+      height: 1px; /* Icon line height */
+      display: block;
+
+    }
+    .child-trigger i:after{
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+    .child-trigger.child-open i:after{
+      -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+    .child-trigger.child-open i{
+    }
+
+
+    /* Menu Styles on Mobile Devices
+    ========================================================================== */  
+
+    .custom-menu-primary.js-enabled{
+      position: relative;
+      padding-top: 44px; /* Makes room for button */
+      margin: 10px 0 10px 0;
+    }
+
+    /* Hide menu on mobile */
+    .custom-menu-primary.js-enabled .hs-menu-wrapper,
+    .custom-menu-primary.js-enabled .hs-menu-children-wrapper{
+      display: none;
+    }  
+
+    /* Make child lists appear below parent items */
+    .custom-menu-primary ul.hs-menu-children-wrapper{
+      visibility: visible !important;
+      opacity: 1 !important;
+      position: static !important;
+      display: none;
+    }
+
+    /* Mobile Menu Styles */ 
+    .custom-menu-primary.js-enabled .hs-menu-wrapper {
+      position: fixed;
+      top: 93px;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      left: 0;
+      max-width: 100%;
+      height: calc(100% - 82px);
+      overflow-y: auto;
+      transform: translateY(8px);
+      transition: transform .25s ease-in-out,opacity .25s ease-in-out;
+      z-index:1;
+    }
+    .custom-menu-primary .hs-menu-wrapper{
+      width: 100%; /* Full screen width */
+    }
+
+    /* Level 1 Menu List Styles */
+    .custom-menu-primary .hs-menu-wrapper > ul > li{
+      position: relative;
+    }
+    .custom-menu-primary .hs-menu-wrapper > ul > li a{
+      font-size: 16px; /* Font size of top level list items */
+      line-height: 45px;
+      overflow: visible;
+    }
+
+    /* Level 1 and Higher Menu List Styles */
+    .custom-menu-primary .hs-menu-wrapper > ul li {
+      border-top: 1px solid rgba(120,120,120,0.2) !important;
+    }
+    .custom-menu-primary .hs-menu-wrapper >  ul li a{
+      padding: 0 10px;
+    }
+
+
+    /* Level 2 and Higher Menu List Styles */
+    .custom-menu-primary .hs-menu-wrapper > ul ul li{
+      background-color: rgba(255, 255, 255, .08);
+    }
+    .custom-menu-primary .hs-menu-wrapper > ul ul li a{
+      text-indent: 10px; /* Indent Child lists */
+      font-size: 16px; /* Font size of child lists */
+    }
+
+    /* Level 3 and Higher Menu List Styles */
+    .custom-menu-primary .hs-menu-wrapper > ul ul ul li a{
+      text-indent: 30px; /* Indent Child lists */
+    }
+    .custom-menu-primary .hs-menu-wrapper > ul ul ul ul li a{
+      text-indent: 50px; /* Indent Child lists */
+    }
+    .hs-menu-item.hs-menu-depth-2.hs-item-has-children a:before{
+      display:none;
+    }
+
+  }
+
+ @media (max-width: 768px)
+  {
+    
+    .menu-sec ul li ul.hs-menu-children-wrapper {
+  
+    padding: 0 !important; 
+}
+  header.header img.hs-image-widget 
+    {
+     width: 100px !important;
+    position: absolute;
+    left: 20px;
+      top: 0;
+}
+    .container-fluid.header.content-wrapper .span8.widget-span.widget-type-cell.header-top-column-3-vertical-alignment.header-top-column-3-padding.dnd-column {
+    padding-top: 0px !important;
+}
+    .container-fluid.header.content-wrapper .span4.widget-span.widget-type-cell.header-top-column-1-vertical-alignment.header-top-column-1-padding.dnd-column {
+    padding: 0 !important;
+}
+    .header .dnd-section {
+     
+    position: relative;
+}
+}
+/* End */

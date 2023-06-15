@@ -1,0 +1,13 @@
+[ {
+  "id" : "f088d723-926a-c746-356c-2e6efa7deaee",
+  "name" : "add_location_i_frame",
+  "display_width" : null,
+  "label" : "Add Location I Frame",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184531.95744620985!2d-79.89962802385186!3d43.72484846077523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15eaa5d05abf%3A0x352d31667cc38677!2sBrampton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1664108786063!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+} ]

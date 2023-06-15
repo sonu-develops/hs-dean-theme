@@ -1,0 +1,13 @@
+.site-header {
+    padding: 15px 0;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    z-index: 77;
+    background-color: #fff;
+    padding: 5px 0;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+}

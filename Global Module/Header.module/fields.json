@@ -1,0 +1,72 @@
+[ {
+  "id" : "993f216e-e0ee-0fb3-e2d1-656f994ec8a1",
+  "name" : "add_logo",
+  "display_width" : null,
+  "label" : "Add Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/MOUNTAINS__1_-removebg-preview-1.png",
+    "alt" : "MOUNTAINS__1_-removebg-preview-1",
+    "suppress_company_name" : true,
+    "width" : 130,
+    "height" : 101
+  }
+}, {
+  "id" : "c9629d8a-f152-e486-79db-a8b399589a3c",
+  "name" : "edit_button_group",
+  "display_width" : null,
+  "label" : "Edit Button Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f146c6fa-6119-fd9c-877d-9d0220f238f0",
+    "name" : "edit_button_text",
+    "display_width" : null,
+    "label" : "Edit Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get Started"
+  }, {
+    "id" : "7aba2d9d-b974-19e5-c7ee-f7ebb7dee733",
+    "name" : "edit_button_link",
+    "display_width" : null,
+    "label" : "Edit Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_button_text" : "Get Started",
+    "edit_button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

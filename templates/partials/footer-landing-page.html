@@ -1,0 +1,19 @@
+<!--
+  templateType: global_partial
+  label: LP Footer Module
+-->
+  {% dnd_area 'footer-global' class='landing-page-footer' %}
+    {% dnd_section   
+    max_width=1240,
+   padding={
+          'default': { 'top': '0', 'bottom': '0' }, 
+          'mobile': { 'top':'20', 'bottom': '20' }       
+          },
+        background_color={{ 'rgba('+ theme.website_footer.Footerbackgroundcolotr.color.color|convert_rgb +',1)' }}
+     %}
+ 
+      {% dnd_module "Landing Page Footer Module"	path="../../Global Module/Website Footer" %}
+			{% end_dnd_module %}
+
+    {% end_dnd_section %}
+  {% end_dnd_area %}

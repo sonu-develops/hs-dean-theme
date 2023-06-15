@@ -1,0 +1,26 @@
+.website-pagination 
+{
+    padding-top: 50px;
+    text-align: center; 
+}
+.website-pagination a {
+    padding: 0 15px;
+}
+
+
+.website-pagination svg
+{
+    
+    width:20px;
+}
+.website-pagination nav.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.website-pagination a.pagination__link.pagination__link--next {
+    display: none;
+}
+.website-pagination a.pagination__link.pagination__link--prev.pagination__link--disabled {
+    display: none;
+}

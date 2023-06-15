@@ -1,0 +1,97 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Service Page 
+screenshotPath: ../images/template-previews/service.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+ 
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+<!-- Section Start-->
+  {% dnd_section 
+    
+     max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',1)' }} 
+  %} 
+{% dnd_column %}
+             {% dnd_row %}
+
+          {% dnd_module path="@hubspot/rich_text",label="Heading Text" %}
+                {% module_attribute "html" %}  
+<div style="text-align:center;">
+  
+
+                  <h2 style="color:#fff;">Over X+ Happy Marketers and Entrepreneurs<br> have adopted the Mountains Theme.</h2> 
+                           </div>
+                {% end_module_attribute %}
+              {% end_dnd_module %}
+
+      {% end_dnd_row %}
+
+
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->  
+{% dnd_section 
+   full_width=true,
+    padding={
+            'default': { 'top': '0', 'bottom': '0', 'left':'0', 'right':'0' }, 
+            'mobile': { 'top':'0' }       
+            }
+   background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Service Two Col.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %} 
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section  
+    max_width={{ theme.spacing.maximum_content_width }}
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Content And Image.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+  {% dnd_section  
+    max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Content And Image.module" choose_image_and_content_direction="mt-section-rt" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %} 
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+{% end_dnd_area %}
+{% endblock body %}

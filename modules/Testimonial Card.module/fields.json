@@ -1,0 +1,220 @@
+[ {
+  "id" : "394e5403-7597-3f0a-1f3f-418ae2626348",
+  "name" : "edit_section_heading",
+  "display_width" : null,
+  "label" : "Edit Section Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: center;\">\n<h2>Hear what the experts are<br>saying about Mountains Theme</h2>\n</div>"
+}, {
+  "id" : "35c9fb9b-b414-7ea4-919a-180573f371ec",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9ae8fb96-480c-ba67-68b2-b0b660bcb294",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "00fb398f-de7c-a4db-5da6-2737b6a59c67",
+    "name" : "color_field",
+    "display_width" : null,
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "module_spacing" : { },
+    "color_field" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "caf18f42-69cd-38f9-7abe-05e8705e4832",
+  "name" : "edit_profile_listing",
+  "display_width" : null,
+  "label" : "Edit Profile Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "e82f56eb-e621-58cd-beee-25aa925604b2",
+    "name" : "edit_feedback_content",
+    "display_width" : null,
+    "label" : "Edit Feedback Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>"
+  }, {
+    "id" : "ad89dc47-072d-913a-a560-c8a33570b31b",
+    "name" : "edit_profile_group",
+    "display_width" : null,
+    "label" : "Edit Profile Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "db6bf818-8374-762c-5f11-46b9e599a436",
+      "name" : "edit_profile_image",
+      "display_width" : null,
+      "label" : "Edit Profile Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      }
+    }, {
+      "id" : "89faddbe-0799-1266-34cf-d6046dffd725",
+      "name" : "edit_profile_details",
+      "display_width" : null,
+      "label" : "Edit Profile Details",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_feedback_content" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>",
+    "edit_profile_group" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  }, {
+    "edit_feedback_content" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>",
+    "edit_profile_group" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  }, {
+    "edit_feedback_content" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>",
+    "edit_profile_group" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  }, {
+    "edit_feedback_content" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>",
+    "edit_profile_group" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  }, {
+    "edit_feedback_content" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>",
+    "edit_profile_group" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  }, {
+    "edit_feedback_content" : "<span>\"Great Website Theme - my favorite aspect are the Kudos messages of encouragement - it really boosts everyone's mood amid working remotely due to the COVID situation in Australia.\"</span>",
+    "edit_profile_group" : {
+      "edit_profile_image" : {
+        "size_type" : "auto",
+        "src" : "https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/61fc6a3d4899831da311ffe2_jw_twitter_profile.jpeg",
+        "alt" : "61fc6a3d4899831da311ffe2_jw_twitter_profile",
+        "loading" : "lazy",
+        "width" : 160,
+        "height" : 160,
+        "max_width" : 160,
+        "max_height" : 160
+      },
+      "edit_profile_details" : "<div><strong>Chris Johnson</strong></div>\n<div>@chris_commerce</div>"
+    }
+  } ]
+} ]

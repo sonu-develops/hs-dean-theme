@@ -1,0 +1,367 @@
+[ {
+  "id" : "271b3b17-f6cb-07b1-ad5e-0799b8b2607c",
+  "name" : "edit_footer_logo",
+  "display_width" : null,
+  "label" : "Edit Footer Logo",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cfd42279-06fc-1ce6-4181-60c598c26679",
+    "name" : "edit_footer_logo",
+    "display_width" : null,
+    "label" : "Edit Footer Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Mountains.png",
+      "alt" : "Mountains",
+      "loading" : "lazy",
+      "width" : 200,
+      "height" : 31,
+      "max_width" : 327,
+      "max_height" : 51
+    }
+  }, {
+    "id" : "c0f3960c-cfb7-8d17-b5f4-ca831622dd24",
+    "name" : "edit_footer_link",
+    "display_width" : null,
+    "label" : "Edit Footer Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_footer_logo" : {
+      "size_type" : "exact",
+      "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Mountains.png",
+      "alt" : "Mountains",
+      "loading" : "lazy",
+      "width" : 200,
+      "height" : 31,
+      "max_width" : 327,
+      "max_height" : 51
+    },
+    "edit_footer_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "fc8419be-c3d0-2957-61cd-7aa4fd96dc9b",
+  "name" : "edit_content",
+  "display_width" : null,
+  "label" : "Edit Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dd064a6a-8589-16dd-61b3-59e2031cf0d1",
+    "name" : "edit_left_content",
+    "display_width" : null,
+    "label" : "Edit Left Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><span style=\"color: #ffffff;\"><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_left_content" : "<p><span style=\"color: #ffffff;\"><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></p>"
+  }
+}, {
+  "id" : "62264ffe-211d-1b84-7391-7a3172033420",
+  "name" : "edit_social_media_group",
+  "display_width" : null,
+  "label" : "Edit Social Media Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "5249aa2f-1233-334c-188d-35ba6d684cfa",
+    "name" : "edit_social_media_icon",
+    "display_width" : null,
+    "label" : "Edit Social Media Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "Facebook Square",
+      "unicode" : "f082",
+      "type" : "REGULAR"
+    }
+  }, {
+    "id" : "ffede027-3887-99f1-9476-039efbbd35d4",
+    "name" : "edit_social_media_link",
+    "display_width" : null,
+    "label" : "Edit Social Media Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_social_media_icon" : {
+      "name" : "Facebook Square",
+      "unicode" : "f082",
+      "type" : "REGULAR"
+    },
+    "edit_social_media_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "edit_social_media_icon" : {
+      "name" : "Facebook Square",
+      "unicode" : "f082",
+      "type" : "REGULAR"
+    },
+    "edit_social_media_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "edit_social_media_icon" : {
+      "name" : "Facebook Square",
+      "unicode" : "f082",
+      "type" : "REGULAR"
+    },
+    "edit_social_media_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "edit_social_media_icon" : {
+      "name" : "Facebook Square",
+      "unicode" : "f082",
+      "type" : "REGULAR"
+    },
+    "edit_social_media_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "02b464e7-c384-909c-19cd-7fbfb8c6975b",
+  "name" : "edit_footer_menu_group",
+  "display_width" : null,
+  "label" : "Edit Footer Menu Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0a197c16-6440-e7e8-77c0-5bcd09276b2c",
+    "name" : "edit_left_menu",
+    "display_width" : null,
+    "label" : "Edit Left Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a0a2d387-3ab3-a42a-e89d-9bf4815b363f",
+      "name" : "edit_heading",
+      "display_width" : null,
+      "label" : "Edit Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Company Pages"
+    }, {
+      "id" : "69bdbe35-b202-7088-00bf-6ef792492f0c",
+      "name" : "edit_menu",
+      "display_width" : null,
+      "label" : "Edit Menu",
+      "required" : false,
+      "locked" : false,
+      "type" : "menu",
+      "default" : 84892684913
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_heading" : "Company Pages",
+      "edit_menu" : 84892684913
+    }
+  }, {
+    "id" : "ca83be3d-b319-f5a3-18f6-ab3bd0021c76",
+    "name" : "edit_right_menu",
+    "display_width" : null,
+    "label" : "Edit Right Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "3098403f-d581-5b4e-b2d8-76ba6ecd8561",
+      "name" : "edit_heading",
+      "display_width" : null,
+      "label" : "Edit Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Service Pages"
+    }, {
+      "id" : "9999fa54-19f0-1229-ad75-a7321e228f9a",
+      "name" : "edit_menu",
+      "display_width" : null,
+      "label" : "Edit Menu",
+      "required" : false,
+      "locked" : false,
+      "type" : "menu",
+      "default" : 84892684913
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_heading" : "Service Pages",
+      "edit_menu" : 84892684913
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_left_menu" : {
+      "edit_heading" : "Company Pages",
+      "edit_menu" : 84892684913
+    },
+    "edit_right_menu" : {
+      "edit_heading" : "Service Pages",
+      "edit_menu" : 84892684913
+    }
+  }
+}, {
+  "id" : "c651c5d0-aa1d-1eec-618a-14711d439513",
+  "name" : "edit_form_group",
+  "display_width" : null,
+  "label" : "Edit Form Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8bf575da-e76b-26e3-9218-5fa186604988",
+    "name" : "edit_text",
+    "display_width" : null,
+    "label" : "Edit Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Subscribe to Our Newsletter"
+  }, {
+    "id" : "0ab51c3c-8986-e386-9eeb-346c9f5228f4",
+    "name" : "form_field",
+    "display_width" : null,
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "9b2455d1-42da-4a42-a10c-f873c863c05b",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "id" : "fb4eb087-51e4-25a9-c3fb-14ec03e212b6",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Lorem Ipsum</strong><span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&nbsp;</span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_text" : "Subscribe to Our Newsletter",
+    "form_field" : {
+      "form_id" : "9b2455d1-42da-4a42-a10c-f873c863c05b",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    },
+    "edit_content" : "<p><strong>Lorem Ipsum</strong><span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&nbsp;</span></p>"
+  }
+}, {
+  "id" : "c1e3af16-3ee8-f9dd-4700-07c76e54d4f8",
+  "name" : "edit_bottom_content",
+  "display_width" : null,
+  "label" : "Edit Bottom Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>All rights reserved</span></p>"
+} ]

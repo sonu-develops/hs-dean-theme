@@ -1,0 +1,179 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Contact Page 
+screenshotPath: ../images/template-previews/contact page.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+ 
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+<!-- Section Start-->
+  {% dnd_section 
+    
+     max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',1)' }} 
+  %} 
+{% dnd_column %}
+             {% dnd_row %}
+
+          {% dnd_module path="@hubspot/rich_text",label="Heading Text" %}
+                {% module_attribute "html" %}  
+<div style="text-align:center;">
+  
+
+                  <h2 style="color:#fff;">Over X+ Happy Marketers and Entrepreneurs<br> have adopted the Mountains Theme.</h2> 
+                           </div>
+                {% end_module_attribute %}
+              {% end_dnd_module %}
+
+      {% end_dnd_row %}
+
+
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section
+     
+     vertical_alignment='MIDDLE',
+          max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',1)' }} 
+  %}
+    {% dnd_column, width=12, offset=0 %}
+        {% dnd_row vertical_alignment='MIDDLE'%}
+          {% dnd_column
+            offset=0,
+            width=6
+          %}
+            {% dnd_row %}
+
+              {% dnd_module
+                path='@hubspot/linked_image',label="Logo Image",
+                img={
+                  'alt': context.column_one_image_alt || 'Clear-logo',
+                  'loading': context.column_one_image_loading || 'lazy',
+                'max_height': context.column_one_image_height || 451,
+                  'max_width': context.column_one_image_width || 605,
+                  'size_type': 'auto_custom_max',
+                  'src': context.column_one_image || get_asset_url('../images/tilicho-hero-image.jpg')
+                }
+              %}
+            {% end_dnd_module %}
+
+             {% end_dnd_row %}           
+            {% end_dnd_column %}
+          {% dnd_column
+            offset=6,
+            width=6
+          %}
+            {% dnd_row %}
+             
+  
+
+          {% end_dnd_row %}           
+        {% end_dnd_column %}  
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+ {% dnd_section
+     
+     vertical_alignment='MIDDLE',
+         max_width={{ theme.spacing.maximum_content_width }} 
+  %}
+    {% dnd_column, width=12, offset=0 %}
+        {% dnd_row vertical_alignment='MIDDLE'%}
+          {% dnd_column
+            offset=0,
+            width=6
+          %}
+            {% dnd_row %}
+
+            {% dnd_module path="@hubspot/rich_text",label="Heading And Description Text" %}
+          {% module_attribute "html" %} 
+            <div style="text-align:left;">  
+              <h2>Something Powerful Text</h2>
+              <p>
+                This is a introductory content that explains your offering in more details. It should follow on from your headline and explains the benefits of your products or services.
+              </p>
+            </div>
+          {% end_module_attribute %}
+        {% end_dnd_module %}
+
+             {% end_dnd_row %} 
+{% dnd_row %}
+             
+{% dnd_module path="../modules/List Content.module" %}                
+        {% end_dnd_module %}  
+
+          {% end_dnd_row %}  
+            {% end_dnd_column %}
+          {% dnd_column
+            offset=6,
+            width=6
+          %}
+            {% dnd_row 
+            
+            margin={
+        'top': -500
+        } 
+        
+        %}
+             
+{% dnd_module path="../modules/Form.module" %}                
+        {% end_dnd_module %}  
+
+          {% end_dnd_row %}           
+        {% end_dnd_column %}  
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section 
+     
+    max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Content And Image.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end--> 
+
+<!-- Section Start-->
+{% dnd_section 
+     
+    max_width={{ theme.spacing.maximum_content_width }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Map.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+{% end_dnd_area %}
+{% endblock body %}

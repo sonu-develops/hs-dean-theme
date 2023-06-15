@@ -1,0 +1,158 @@
+[ {
+  "id" : "cfce2776-e666-77b5-11b2-92941de86e4e",
+  "name" : "edit_heading_content",
+  "display_width" : null,
+  "label" : "Edit Heading Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: center;\">\n<h1>Start your Website development with amazing style and edit properties</h1>\n</div>"
+}, {
+  "id" : "004e7d4b-ce42-eb64-8ebd-74a83437db8b",
+  "name" : "edit_listing_content",
+  "display_width" : null,
+  "label" : "Edit Listing Content",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "368f073f-052d-6300-ab77-b995c3880f05",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Easy sign up"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_content" : "Easy sign up"
+  }, {
+    "edit_content" : "Easy sign up"
+  }, {
+    "edit_content" : "Easy sign up"
+  } ]
+}, {
+  "id" : "a58cd06e-fa34-ae3e-3945-a872a34b30b4",
+  "name" : "slack_button_group",
+  "display_width" : null,
+  "label" : "Banner Button Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "22c1d501-c7b4-3df1-8e0a-d605d2d1539c",
+    "name" : "edit_button_text",
+    "display_width" : null,
+    "label" : "Edit Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Join the Slack waitlist"
+  }, {
+    "id" : "84f4722d-ce5c-4fc2-a14c-aa07b837889d",
+    "name" : "edit_button_link",
+    "display_width" : null,
+    "label" : "Edit Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "ddd6efd7-4a90-bf18-b8fb-3414ceb538c3",
+    "name" : "choose_button_style",
+    "display_width" : null,
+    "label" : "Choose Button Style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "button", "Default Button " ], [ "transparent_cta", "Transparent CTA" ], [ "white_cta", "White CTA" ], [ "simple_cta", "Simple CTA" ], [ "arrow_cta", "Arrow CTA" ], [ "simple_cta_with_arrow", "simple cta with arrow" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : "button"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_button_text" : "Join the Slack waitlist",
+    "edit_button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "choose_button_style" : "button"
+  }
+}, {
+  "id" : "f42b80a0-5a87-ddca-393c-2f194b08caad",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "77075bac-d2d7-0a99-14cc-3ba77bc8ce3f",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "module_spacing" : { }
+  }
+}, {
+  "id" : "8ab7af69-cdfe-1405-5d95-02b876caf59e",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://21958117.fs1.hubspotusercontent-na1.net/hubfs/21958117/Section%20in%20page%20editor.webp",
+    "alt" : "Section in page editor",
+    "loading" : "lazy",
+    "width" : 824,
+    "height" : 770,
+    "max_width" : 824,
+    "max_height" : 770
+  }
+} ]

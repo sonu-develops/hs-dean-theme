@@ -1,0 +1,38 @@
+<div class="mt-card-main d-flex">
+	{% for item in module.edit_card_listing %}
+		<div class="mt-card-item">
+			<div class="mt-card-inner">
+				<div class="mt-card-image">
+					{% if item.add_image.src %}
+						{% set sizeAttrs = 'width="{{ item.add_image.width }}" height="{{ item.add_image.height }}"' %}
+						{% if item.add_image.size_type == 'auto' %}
+							{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+							{% elif item.add_image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.add_image.max_width }}" height="{{ item.add_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.add_image.loading != 'disabled' ? 'loading="{{ item.add_image.loading }}"' : '' %}
+						<img src="{{ item.add_image.src }}" alt="{{ item.add_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</div>
+				<div class="mt-card-content">
+					{{ item.edit_content }}
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+
+
+{% require_css %}
+<style>
+{% scope_css %}
+
+.mt-card-main
+  {
+  {{ module.style.module_spacing.css }}
+  }
+  
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

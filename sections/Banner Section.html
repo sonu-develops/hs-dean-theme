@@ -1,0 +1,24 @@
+<!--
+  templateType: section
+  label: Banner Section
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/banner-section.png 
+  description: "Banner section with content and image"
+-->
+<!-- Section Start-->
+  {% dnd_section  
+    max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Banner Module.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+ 

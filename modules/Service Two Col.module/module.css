@@ -1,0 +1,37 @@
+.service-mod-left {
+    width: 50%;
+    float: left;
+}
+.service-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.service-mod-right {
+    width: 50%;
+    float: right;
+}
+.service-mod-image {
+    height: 590px;
+    background-position: left center;
+    background-color: rgb(244, 246, 250);
+    background-size: cover;
+}
+.service-btn {
+    padding-top: 15px;
+}
+.service-btn a {
+    color: #5767af;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.service-item {
+    display: flex;
+    align-items: center;
+}
+.service-content {
+    display: table-cell;
+    height: auto;
+    padding: 90px;
+    vertical-align: middle;
+    width: 100%;
+}

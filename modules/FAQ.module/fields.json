@@ -1,0 +1,128 @@
+[ {
+  "id" : "ac7b19d3-a977-3c82-c591-4c7fa16bf9e7",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ccbbe461-92af-09c4-97b9-98f534b95d10",
+    "name" : "edit_module_background_color",
+    "display_width" : null,
+    "label" : "Edit Module Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#f8fafc",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fc2e00da-1154-a4bd-ccac-fa670c9c2903",
+    "name" : "edit_faq_section_listing_background_color",
+    "display_width" : null,
+    "label" : "Edit FAQ Section Listing Heading Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "d00c5ed2-45a0-b165-b971-8a16f6d827b9",
+    "name" : "edit_faq_section_listing_answer_background_color",
+    "display_width" : null,
+    "label" : "Edit FAQ Section Listing Answer Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "0749d85d-54b1-1697-034d-0ae791bc6dc4",
+    "name" : "module_spacing",
+    "display_width" : null,
+    "label" : "Module Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_module_background_color" : {
+      "color" : "#f8fafc",
+      "opacity" : 100
+    },
+    "edit_faq_section_listing_background_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "edit_faq_section_listing_answer_background_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "9c20cd47-dad7-7bf8-3ee5-66cffd5240e8",
+  "name" : "edit_faq_listing",
+  "display_width" : null,
+  "label" : "Edit FAQ Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "99c49f87-1f7e-7f43-b97b-bcccd8146348",
+    "name" : "edit_faq_heading",
+    "display_width" : null,
+    "label" : "Edit FAQ Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "How does Feedback Friday work?"
+  }, {
+    "id" : "979e412a-5284-b061-3575-bb6ab6f1dcc8",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_faq_heading" : "How does Feedback Friday work?",
+    "edit_content" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  }, {
+    "edit_faq_heading" : "How does Feedback Friday work?",
+    "edit_content" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  }, {
+    "edit_faq_heading" : "How does Feedback Friday work?",
+    "edit_content" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  }, {
+    "edit_faq_heading" : "How does Feedback Friday work?",
+    "edit_content" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  }, {
+    "edit_faq_heading" : "How does Feedback Friday work?",
+    "edit_content" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  }, {
+    "edit_faq_heading" : "How does Feedback Friday work?",
+    "edit_content" : "<strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>"
+  } ]
+} ]

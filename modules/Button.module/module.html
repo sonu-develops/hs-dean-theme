@@ -1,0 +1,82 @@
+<siv class="{{name}}">
+<div class="row-button" style="text-align:{{ module.choose_button_allignment }}; ">
+  <div class="{{ module.choose_button_type }}">
+    {% set href = module.button_name_and_link.add_button_link.url.href %}
+    {% if module.button_name_and_link.add_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.button_name_and_link.add_button_link.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.button_name_and_link.add_button_link.rel %}rel="{{ module.button_name_and_link.add_button_link.rel }}"{% endif %}
+       >
+      {{ module.button_name_and_link.add_button_text }}
+      
+      {% if module.choose_button_type == "arrow_cta" %}
+			 <i class="fas fa-arrow-right"></i>
+			{% endif %}
+			
+			{% if module.choose_button_type == "simple_cta_with_arrow" %}
+			 <i class="fas fa-arrow-circle-right"></i>
+			{% endif %}
+    </a>
+  </div>
+</div>
+</siv>
+
+{% require_css %}
+<style>
+{% scope_css %}
+
+.row-button
+  {
+{{ module.style.module_spacing.css }}
+  }
+  
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+<style>
+  {% if module.choose_button_type =="custom-button"%}
+  .{{name}} .custom-button a{
+    border:1px solid {{ module.button_style.add_border_color.color }};
+    display: inline-block;
+    padding-top: {{ module.button_style.add_vertical_top_bottom_spacing }}px;
+    padding-bottom: {{ module.button_style.add_vertical_top_bottom_spacing }}px;
+    padding-left: {{ module.button_style.add_horizontal_left_right_spacing }}px;
+    padding-right: {{ module.button_style.add_horizontal_left_right_spacing }}px;
+    border-radius: {{ module.button_style.add_border_corner }}px;
+    background:{{ module.button_style.add_background_color.color }};
+    box-shadow:{{ module.button_style.add_box_shadow }};
+    color:{{ module.button_style.add_text_color.color }};
+  }
+  .{{name}} .custom-button a:hover{  
+    background:{{ module.button_style.add_text_color.color }};
+   
+    color:{{ module.button_style.add_background_color.color }};
+  }
+  {% endif %}
+  
+  @media(max-width:767px){
+    .row-button {
+      text-align: center!important;
+    } 
+  }
+  
+
+  .{{name}} .arrow_cta a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .{{name}} .arrow_cta a i{
+    display:inline-block !important;
+    margin-left:8px;
+    transition:0.2s transform ease;
+    margin-top:5px;
+  }
+  .{{name}} .arrow_cta a:hover i{
+    transform:translateX(5px);
+  }
+
+</style>
+

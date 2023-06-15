@@ -1,0 +1,110 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home Page  
+screenshotPath: ../images/template-previews/Home.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+ 
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+<!-- Section Start-->
+{% dnd_section 
+     max_width={{ theme.spacing.maximum_content_width }} 
+         %} 
+          {% dnd_column %}
+             {% dnd_row %}
+           {% dnd_module path="../modules/Content And Image.module", section_alignment="two-col-fl" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}  
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section 
+   max_width={{ theme.spacing.maximum_content_width }} 
+  %} 
+{% dnd_column %}
+             {% dnd_row %}
+           {% dnd_module path="../modules/Testimonial Slider.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+  {% dnd_section  
+    max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}    
+{% dnd_column %}
+            {% dnd_row %}
+           {% dnd_module path="../modules/Banner.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section 
+     max_width={{ theme.spacing.maximum_content_width }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Content And Image.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end --> 
+
+<!-- Section Start-->
+{% dnd_section  
+max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Testimonial Card.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+
+<!-- Section Start-->
+{% dnd_section 
+    
+   max_width={{ theme.spacing.maximum_content_width }}, 
+background_color={{ 'rgba('+ theme.global_colors.primary.color|convert_rgb +',0.1)' }} 
+  %}
+  
+          {% dnd_column %}
+            
+            {% dnd_row %}
+           {% dnd_module path="../modules/Pricing Section.module" %}                
+        {% end_dnd_module %}        
+      {% end_dnd_row %}
+        {% end_dnd_column %}         
+     
+  {% end_dnd_section %}
+<!-- Section end-->
+   
+{% end_dnd_area %}
+{% endblock body %}

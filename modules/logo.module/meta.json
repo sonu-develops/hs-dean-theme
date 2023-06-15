@@ -1,0 +1,17 @@
+{
+  "content_tags" : [ {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_ANY",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type-logo",
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "../../../mV0_hubspot/img/icon/edited-logo.svg",
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 99817102750,
+  "label" : "logo",
+  "is_available_for_new_content" : true
+}

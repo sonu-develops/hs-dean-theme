@@ -1,0 +1,55 @@
+<div class="testimonial-mod">
+  <div class="container">
+    <div class="testimonial-inner">
+      <div class="testimonial-left">
+        <div class="testimonial-content">
+          {{ module.edit_left_content }}
+        </div>
+      </div>
+      <div class="testimonial-right">
+        <div id="test-slider" class="owl-carousel owl-theme">
+          {% for item in module.edit_testimonial_listing %}
+            <div class="item"> 
+            <div class="testimonial-cards" style="background-color: {{ item.edit_listing_bg_color.color }};">
+              <div class="testimonial-feedback">
+                {{ item.edit_feedback_content }}
+              </div>
+              <div class="testimonial-profile d-flex">
+                <div class="testimonial-image">
+                  {% if item.add_profile_image.src %}
+                    {% set sizeAttrs = 'width="{{ item.add_profile_image.width }}" height="{{ item.add_profile_image.height }}"' %}
+                    {% if item.add_profile_image.size_type == 'auto' %}
+                      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                      {% elif item.add_profile_image.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.add_profile_image.max_width }}" height="{{ item.add_profile_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.add_profile_image.loading != 'disabled' ? 'loading="{{ item.add_profile_image.loading }}"' : '' %}
+                    <img src="{{ item.add_profile_image.src }}" alt="{{ item.add_profile_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                <div class="testimonial-details">
+                  <div class="testimonial-dt">
+                  {{ item.edit_profile_details }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 	{% require_css %}
+	<style>
+	{% scope_css %}
+
+	.testimonial-mod
+	  {
+	{{ module.style.module_spacing.css }}
+	  }
+	  
+	  {% end_scope_css %}
+	</style>
+	{% end_require_css %}

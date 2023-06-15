@@ -1,0 +1,53 @@
+<div class="pricing-sec">
+  <div class="pricing-sec-main d-flex">
+    {% for item in module.edit_pricing_card %}
+      <div class="pricing-sec-item mt-card-item">
+        <div class=" pricing-sec-inner-t" style="background-color: {{ item.edit_card_bg_color.color }};">
+          <!-- add rec sec -->
+          {% if item.active_recommended_section %}
+            <div class="inner-section-rec" style="background-color:{{ item.edit_recommended_section.recommended_bg_color_setting.color }};">
+              {{ item.edit_recommended_section.edit_recommended_section }}
+            </div> {% endif %}
+            <!-- end -->
+            <div class="pri-item-in">
+              <div class="pricing-sec-heading">
+                {{ item.edit_heading_c }}
+              </div>
+              <div class="pricing-content">
+                {{ item.edit_card_descripotion_ }}
+              </div>
+              <div class="pricing-sec-price">
+                {{ item.edit_price_amount }}
+              </div>
+              <div class="pricing-Button {{ item.edit_button_group.choose_button_style }}">
+                {% set href = item.edit_button_group.edit_button_link.url.href %}
+                {% if item.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                  {% if item.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+                  {% if item.edit_button_group.edit_button_link.rel %}rel="{{ item.edit_button_group.edit_button_link.rel }}"{% endif %}
+                  >
+                  {{ item.edit_button_group.edit_button_text }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+	{% require_css %}
+	<style>
+	{% scope_css %}
+
+	.pricing-sec
+	  {
+	  {{ module.style.module_spacing.css }}
+	  }
+	  
+	  {% end_scope_css %}
+	</style>
+	{% end_require_css %}

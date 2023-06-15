@@ -1,0 +1,41 @@
+.paral-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    margin-top: -80px;
+    margin-bottom: -80px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 80%;
+}
+.persone-image {
+    margin-right: 15px;
+}
+.persone-details h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.person-style.d-flex {
+    padding-top: 25px;
+}
+.persone-details p {
+    margin: 0 !important;
+}
+.persone-image img {
+    width: 70px;
+    height: 70px !important;
+    border-radius: 100%;
+}
+.collection-style {
+    padding: 40px 60px 50px;
+    background-color: #e9e9f6;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}

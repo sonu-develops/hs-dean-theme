@@ -1,0 +1,62 @@
+<div class="banner-sec">
+  <div class="container">
+    <div class="banner-inner">
+      <div class="heading-content">
+        {{ module.edit_heading_content }}
+      </div>
+      <div class="content-listing">
+        <ul>
+          {% for item in module.edit_listing_content %}
+            <li>
+              <img src="https://21093607.fs1.hubspotusercontent-na1.net/hubfs/21093607/Landing%20Page%20Image/614dc489fd559b9671a67121_Path.svg">
+             <p> {{ item.edit_content }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="button-main d-flex">
+         <div class="button-item {{ module.slack_button_group.choose_button_style }}">
+          {% set href = module.slack_button_group.edit_button_link.url.href %}
+          {% if module.slack_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+            {% if module.slack_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+            {% if module.slack_button_group.edit_button_link.rel %}rel="{{ module.slack_button_group.edit_button_link.rel }}"{% endif %}
+            >
+           
+            {{ module.slack_button_group.edit_button_text }}
+          </a>
+        </div>
+        
+       
+      </div>
+
+       <div class="banner-image">
+{% if module.banner_image.src %}
+  {% set sizeAttrs = 'width="{{ module.banner_image.width }}" height="{{ module.banner_image.height }}"' %}
+  {% if module.banner_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+  {% elif module.banner_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.banner_image.max_width }}" height="{{ module.banner_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+  {% endif %}
+   {% set loadingAttr = module.banner_image.loading != 'disabled' ? 'loading="{{ module.banner_image.loading }}"' : '' %}
+  <img src="{{ module.banner_image.src }}" alt="{{ module.banner_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+       </div>
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+<style>
+{% scope_css %}
+
+.banner-sec
+  {
+  {{ module.style.module_spacing.css }}
+  }
+  
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

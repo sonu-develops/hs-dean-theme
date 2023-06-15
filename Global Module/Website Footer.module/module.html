@@ -1,0 +1,95 @@
+<div class="footer-mt d-flex">
+	<div class="footer-item col-3">
+		
+		<div class="footer-first">
+			<div class="footer-logo">
+				{% set href = module.edit_footer_logo.edit_footer_link.url.href %}
+				{% if module.edit_footer_logo.edit_footer_link.url.type is equalto "EMAIL_ADDRESS" %}
+					{% set href = "mailto:" + href %}
+				{% endif %}
+				<a href="{{ href }}"
+					{% if module.edit_footer_logo.edit_footer_link.open_in_new_tab %}target="_blank"{% endif %}
+					{% if module.edit_footer_logo.edit_footer_link.rel %}rel="{{ module.edit_footer_logo.edit_footer_link.rel }}"{% endif %}
+					>
+					{% if module.edit_footer_logo.edit_footer_logo.src %}
+						{% set sizeAttrs = 'width="{{ module.edit_footer_logo.edit_footer_logo.width }}" height="{{ module.edit_footer_logo.edit_footer_logo.height }}"' %}
+						{% if module.edit_footer_logo.edit_footer_logo.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ module.edit_footer_logo.edit_footer_logo.width }}" height="{{ module.edit_footer_logo.edit_footer_logo.height }}" style="max-width: 100%; height: auto;"' %}
+							{% elif module.edit_footer_logo.edit_footer_logo.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ module.edit_footer_logo.edit_footer_logo.max_width }}" height="{{ module.edit_footer_logo.edit_footer_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = module.edit_footer_logo.edit_footer_logo.loading != 'disabled' ? 'loading="{{ module.edit_footer_logo.edit_footer_logo.loading }}"' : '' %}
+						<img src="{{ module.edit_footer_logo.edit_footer_logo.src }}" alt="{{ module.edit_footer_logo.edit_footer_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</a>
+			</div>
+			<div class="footer-content">
+				{{ module.edit_content.edit_left_content }}
+			</div>
+			<div class="footer-social">
+				<ul>
+					{% for item in module.edit_social_media_group %}
+						<li>
+							{% set href = item.edit_social_media_link.url.href %}
+							{% if item.edit_social_media_link.url.type is equalto "EMAIL_ADDRESS" %}
+								{% set href = "mailto:" + href %}
+							{% endif %}
+							<a href="{{ href }}"
+								{% if item.edit_social_media_link.open_in_new_tab %}target="_blank"{% endif %}
+								{% if item.edit_social_media_link.rel %}rel="{{ item.edit_social_media_link.rel }}"{% endif %}
+								>
+								{% icon
+								name="{{ item.edit_social_media_icon.name }}"
+								style="{{ item.edit_social_media_icon.type }}"
+								unicode="{{ item.edit_social_media_icon.unicode }}"
+								icon_set="{{ item.edit_social_media_icon.icon_set }}"
+								%}
+							</a> </li>{% endfor %}
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-item col-3">
+				<div class="footer-second d-flex">
+					<div class="footer-menu-one col-6">
+						<h4>{{ module.edit_footer_menu_group.edit_left_menu.edit_heading }} </h4>
+						<div class="footer-menu">
+						{% menu id="{{ module.edit_footer_menu_group.edit_left_menu.edit_menu }}" %}
+						</div>
+					</div>
+          
+					<div class="footer-menu-two col-6">
+						<h4> {{ module.edit_footer_menu_group.edit_right_menu.edit_heading }}</h4>
+						<div class="footer-menu">
+							{% menu id="{{ module.edit_footer_menu_group.edit_right_menu.edit_menu }}" %}
+						</div>
+					</div>
+				</div>
+        
+			</div>
+			<div class="footer-item col-3">
+				<div class="footer-form">
+					<h4>{{ module.edit_form_group.edit_text }}</h4>
+					<div class="form-footer">
+						{% form
+							form_to_use="{{ module.edit_form_group.form_field.form_id }}"
+							response_response_type="{{ module.edit_form_group.form_field.response_type }}"
+							response_message="{{ module.edit_form_group.form_field.message }}"
+							response_redirect_id="{{ module.edit_form_group.form_field.redirect_id }}"
+							response_redirect_url="{{module.edit_form_group.form_field.redirect_url}}"
+							gotowebinar_webinar_key="{{ module.edit_form_group.form_field.gotowebinar_webinar_key }}"
+							%}
+						</div>
+						<div class="form-content">
+							{{ module.edit_form_group.edit_content }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-sub">
+				<div class="foot-menu-inner">
+					{{ module.edit_bottom_content }}
+				</div>
+			</div>
